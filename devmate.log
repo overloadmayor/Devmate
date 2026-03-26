@@ -1,0 +1,8 @@
+2026-03-26 20:01:09 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-3-small
+2026-03-26 20:01:09 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: gpt-4o
+2026-03-26 20:01:09 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 20:01:09 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 20:01:09 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 20:01:09 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 20:02:24 | ERROR    | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 20:02:24 | ERROR    | __main__:main:32 - 应用程序启动失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  devmate:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - vector_db:/app/vector_db
+      - .skills:/app/.skills
+    environment:
+      - PYTHONUNBUFFERED=1
+
+volumes:
+  vector_db:

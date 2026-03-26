@@ -1,0 +1,21 @@
+[project]
+name = "devmate"
+version = "0.1.0"
+description = "AI 驱动的编程助手，帮助开发者生成和修改代码库"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.2.10",
+    "langchain-openai",
+    "langchain-chroma",
+    "langchain_community",
+    "langchain_text_splitters",
+    "tavily-python",
+    "pydantic-settings",
+    "python-dotenv",
+    "toml",
+    "loguru",
+    "fastapi",
+    "uvicorn",
+    "httpx"
+]
