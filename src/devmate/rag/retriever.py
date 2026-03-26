@@ -32,12 +32,22 @@ class RAGRetriever:
             logger.info(f"文档切分为 {len(splits)} 个片段")
             
             # 创建向量存储
-            self.vector_store = Chroma.from_documents(
-                documents=splits,
-                embedding=self.embeddings,
-                persist_directory=self.persist_directory
-            )
-            logger.info("文档摄入完成")
+            if splits:
+                self.vector_store = Chroma.from_documents(
+                    collection_name="knowledge_base",
+                    documents=splits,
+                    embedding=self.embeddings,
+                    persist_directory=self.persist_directory
+                )
+                logger.info("文档摄入完成")
+            else:
+                # 如果没有文档片段，创建一个空的向量存储
+                self.vector_store = Chroma(
+                    collection_name="knowledge_base",
+                    persist_directory=self.persist_directory,
+                    embedding_function=self.embeddings
+                )
+                logger.info("没有文档需要摄入，创建空向量存储")
         except Exception as e:
             logger.error(f"文档摄入失败: {e}")
             raise
@@ -48,6 +58,7 @@ class RAGRetriever:
             # 如果向量存储未初始化，尝试加载
             try:
                 self.vector_store = Chroma(
+                    collection_name="knowledge_base",
                     persist_directory=self.persist_directory,
                     embedding_function=self.embeddings
                 )

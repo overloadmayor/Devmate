@@ -1,13 +1,13 @@
 from langchain.agents import create_agent
 from ..utils.llm import get_llm
-from ..tools.tools import search_web, search_knowledge_base
+from ..tools.tools import search_web, search_knowledge_base, get_weather
 from ..utils.logger import logger
 from ..utils.config import config
 
 class DevMateAgent:
     def __init__(self):
         self.llm = get_llm()
-        self.tools = [search_web, search_knowledge_base]
+        self.tools = [search_web, search_knowledge_base, get_weather]
         self.agent = self._create_agent()
     
     def _create_agent(self):
@@ -30,7 +30,9 @@ class DevMateAgent:
         try:
             result = await self.agent.ainvoke({"messages": [{"role": "user", "content": query}]})
             logger.info(f"Agent 执行完成: {query}")
-            return result.get("output", "")
+        
+            return result.get("output", result)
+            
         except Exception as e:
             logger.error(f"Agent 执行失败: {e}")
             return f"执行失败: {str(e)}"

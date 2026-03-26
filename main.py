@@ -2,6 +2,8 @@ import asyncio
 from src.devmate.agents.agent import agent
 from src.devmate.utils.logger import logger
 from src.devmate.rag.retriever import retriever
+from dotenv import load_dotenv  
+load_dotenv()  
 
 async def main():
     """主函数"""

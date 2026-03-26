@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uvicorn
-from tavily import TavilyClient
+from langchain_tavily import TavilySearch
 from ..utils.config import config
 from ..utils.logger import logger
 
@@ -10,6 +10,14 @@ app = FastAPI()
 class SearchRequest(BaseModel):
     query: str
     max_results: int = 5
+    topic: str = "general"
+    search_depth: str = "basic"
+    time_range: str | None = None
+    include_images: bool = False
+    include_domains: list[str] | None = None
+    exclude_domains: list[str] | None = None
+    start_date: str | None = None
+    end_date: str | None = None
 
 class SearchResult(BaseModel):
     title: str
@@ -29,7 +37,11 @@ def startup_event():
         if not tavily_api_key:
             logger.error("Tavily API key 未配置")
             return
-        tavily_client = TavilyClient(api_key=tavily_api_key)
+        tavily_client = TavilySearch(
+            max_results=5,
+            topic="general",
+            search_depth="basic"
+        )
         logger.info("Tavily 客户端初始化成功")
     except Exception as e:
         logger.error(f"Tavily 客户端初始化失败: {e}")
@@ -40,11 +52,23 @@ async def search_web(request: SearchRequest):
         if not tavily_client:
             raise HTTPException(status_code=500, detail="Tavily 客户端未初始化")
         
-        results = tavily_client.search(
-            query=request.query,
-            max_results=request.max_results,
-            search_depth="basic"
-        )
+        invoke_params = {
+            "query": request.query,
+            "max_results": request.max_results,
+            "topic": request.topic,
+            "search_depth": request.search_depth,
+            "time_range": request.time_range,
+            "include_images": request.include_images,
+            "include_domains": request.include_domains,
+            "exclude_domains": request.exclude_domains,
+            "start_date": request.start_date,
+            "end_date": request.end_date
+        }
+        
+        # 过滤掉None值
+        invoke_params = {k: v for k, v in invoke_params.items() if v is not None}
+        
+        results = tavily_client.invoke(invoke_params)
         
         formatted_results = []
         for result in results.get("results", []):

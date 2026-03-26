@@ -10,12 +10,16 @@ dependencies = [
     "langchain-chroma",
     "langchain_community",
     "langchain_text_splitters",
-    "tavily-python",
+    "langchain-tavily",
     "pydantic-settings",
     "python-dotenv",
     "toml",
     "loguru",
     "fastapi",
     "uvicorn",
-    "httpx"
+    "httpx",
 ]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true

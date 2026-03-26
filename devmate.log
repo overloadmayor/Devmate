@@ -6,3 +6,413 @@
 2026-03-26 20:01:09 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
 2026-03-26 20:02:24 | ERROR    | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
 2026-03-26 20:02:24 | ERROR    | __main__:main:32 - 应用程序启动失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 20:52:30 | ERROR    | src.devmate.utils.llm:get_embeddings:33 - Embedding 初始化失败: 'Config' object has no attribute 'embedding'
+2026-03-26 20:56:52 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 20:56:52 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 20:56:52 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 20:56:53 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 20:56:53 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 20:56:53 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 20:56:53 | ERROR    | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 20:56:53 | ERROR    | __main__:main:32 - 应用程序启动失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 21:17:30 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:17:30 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:17:30 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:17:30 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:17:30 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:17:30 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:17:30 | ERROR    | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 21:17:30 | ERROR    | __main__:main:32 - 应用程序启动失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 21:18:37 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:18:37 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:18:37 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:18:37 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:18:37 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:18:37 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:18:37 | ERROR    | src.devmate.rag.retriever:ingest_documents:43 - 文档摄入失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 21:18:37 | ERROR    | __main__:main:32 - 应用程序启动失败: Expected Embeddings to be non-empty list or numpy array, got [] in upsert.
+2026-03-26 21:38:12 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:38:12 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:38:12 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:38:12 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:38:12 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:38:12 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:38:13 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 21:38:13 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 21:38:13 | INFO     | __main__:main:15 - =====================================
+2026-03-26 21:38:13 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 21:38:13 | INFO     | __main__:main:17 - =====================================
+2026-03-26 21:38:13 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 21:38:13 | INFO     | __main__:main:19 - =====================================
+2026-03-26 21:40:12 | INFO     | __main__:main:27 - 用户输入: 你好
+2026-03-26 21:40:12 | ERROR    | src.devmate.agents.agent:run:35 - Agent 执行失败: 404 page not found
+2026-03-26 21:40:12 | INFO     | __main__:main:29 - DevMate: 执行失败: 404 page not found
+2026-03-26 21:40:12 | INFO     | __main__:main:30 - =====================================
+2026-03-26 21:48:59 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 21:49:10 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:49:10 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:49:10 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:49:10 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:49:10 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:49:10 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:49:10 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 21:49:10 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 21:49:10 | INFO     | __main__:main:15 - =====================================
+2026-03-26 21:49:10 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 21:49:10 | INFO     | __main__:main:17 - =====================================
+2026-03-26 21:49:10 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 21:49:10 | INFO     | __main__:main:19 - =====================================
+2026-03-26 21:49:13 | INFO     | __main__:main:27 - 用户输入: 你好
+2026-03-26 21:49:14 | ERROR    | src.devmate.agents.agent:run:35 - Agent 执行失败: 404 page not found
+2026-03-26 21:49:14 | INFO     | __main__:main:29 - DevMate: 执行失败: 404 page not found
+2026-03-26 21:49:14 | INFO     | __main__:main:30 - =====================================
+2026-03-26 21:56:09 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 21:56:14 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:56:14 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:56:14 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:56:14 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:56:14 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:56:14 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:56:14 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 21:56:14 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 21:56:14 | INFO     | __main__:main:15 - =====================================
+2026-03-26 21:56:14 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 21:56:14 | INFO     | __main__:main:17 - =====================================
+2026-03-26 21:56:14 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 21:56:14 | INFO     | __main__:main:19 - =====================================
+2026-03-26 21:56:17 | INFO     | __main__:main:27 - 用户输入: hello
+2026-03-26 21:56:18 | ERROR    | src.devmate.agents.agent:run:35 - Agent 执行失败: 404 page not found
+2026-03-26 21:56:18 | INFO     | __main__:main:29 - DevMate: 执行失败: 404 page not found
+2026-03-26 21:56:18 | INFO     | __main__:main:30 - =====================================
+2026-03-26 21:56:41 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 21:56:44 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:56:44 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:56:44 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:56:44 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:56:44 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:56:44 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:56:45 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 21:56:45 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 21:56:45 | INFO     | __main__:main:15 - =====================================
+2026-03-26 21:56:45 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 21:56:45 | INFO     | __main__:main:17 - =====================================
+2026-03-26 21:56:45 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 21:56:45 | INFO     | __main__:main:19 - =====================================
+2026-03-26 21:56:46 | INFO     | __main__:main:27 - 用户输入: hello
+2026-03-26 21:56:49 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: hello
+2026-03-26 21:56:49 | INFO     | __main__:main:29 - DevMate: 
+2026-03-26 21:56:49 | INFO     | __main__:main:30 - =====================================
+2026-03-26 21:57:52 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 21:57:56 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:57:56 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:57:56 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:57:56 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:57:56 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:57:56 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:57:57 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 21:57:57 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 21:57:57 | INFO     | __main__:main:15 - =====================================
+2026-03-26 21:57:57 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 21:57:57 | INFO     | __main__:main:17 - =====================================
+2026-03-26 21:57:57 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 21:57:57 | INFO     | __main__:main:19 - =====================================
+2026-03-26 21:58:10 | INFO     | __main__:main:27 - 用户输入: hello
+2026-03-26 21:58:13 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: hello
+2026-03-26 21:58:13 | INFO     | __main__:main:29 - DevMate: 
+2026-03-26 21:58:13 | INFO     | __main__:main:30 - =====================================
+2026-03-26 21:58:36 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 21:58:41 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:58:41 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:58:41 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:58:41 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:58:41 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:58:41 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:58:41 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 21:58:41 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 21:58:41 | INFO     | __main__:main:15 - =====================================
+2026-03-26 21:58:41 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 21:58:41 | INFO     | __main__:main:17 - =====================================
+2026-03-26 21:58:41 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 21:58:41 | INFO     | __main__:main:19 - =====================================
+2026-03-26 21:58:44 | INFO     | __main__:main:27 - 用户输入: hello
+2026-03-26 21:58:48 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: hello
+2026-03-26 21:58:48 | INFO     | __main__:main:29 - DevMate: 
+2026-03-26 21:58:48 | INFO     | __main__:main:30 - =====================================
+2026-03-26 21:59:51 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 21:59:51 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: MiniMax-M2.7
+2026-03-26 21:59:51 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 21:59:51 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 21:59:51 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 21:59:51 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 21:59:52 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 21:59:52 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 21:59:52 | INFO     | __main__:main:15 - =====================================
+2026-03-26 21:59:52 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 21:59:52 | INFO     | __main__:main:17 - =====================================
+2026-03-26 21:59:52 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 21:59:52 | INFO     | __main__:main:19 - =====================================
+2026-03-26 21:59:55 | INFO     | __main__:main:27 - 用户输入: hello
+2026-03-26 22:00:01 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: hello
+2026-03-26 22:04:31 | INFO     | src.devmate.agents.agent:run:33 - {'messages': [HumanMessage(content='hello', additional_kwargs={}, response_metadata={}, id='6910a259-6391-4f38-bee9-61bd2a7beea8'), AIMessage(content='<think>\nThe user is saying "hello". This is a simple greeting. I should respond in a friendly and helpful manner, introducing myself and offering assistance.\n</think>\n\nHello! Welcome! I\'m here to help you with a variety of tasks. I have access to both a local knowledge base and the ability to search the web for the latest information.\n\nHere are some things I can help you with:\n\n- 🔍 **Search & Research**: I can search the web for current information or query a local knowledge base for specific topics.\n- 📚 **Answer Questions**: Whether you need explanations, summaries, or detailed information on various subjects.\n- 💡 **Problem Solving**: Help with reasoning, analysis, or tackling complex questions.\n- ✍️ **Writing Assistance**: Help with drafting, editing, or improving text.\n- 🌐 **Translation & Language**: Assist with language-related tasks.\n\nWhat can I help you with today? Feel free to ask me anything! 😊', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 192, 'prompt_tokens': 292, 'total_tokens': 484, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 33, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': None, 'total_characters': 0}, 'model_provider': 'openai', 'model_name': 'MiniMax-M2.7', 'system_fingerprint': None, 'id': '5c933251-c75c-4ceb-8b02-f8ce600c58eb', 'finish_reason': 'stop', 'logprobs': None}, name='MiniMax AI', id='lc_run--019d2a71-d2cc-7630-b836-ba4f1e3144d6-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 292, 'output_tokens': 192, 'total_tokens': 484, 'input_token_details': {}, 'output_token_details': {'reasoning': 33}})]}
+2026-03-26 22:04:31 | ERROR    | src.devmate.agents.agent:run:37 - Agent 执行失败: 'AIMessage' object is not subscriptable
+2026-03-26 22:04:31 | INFO     | __main__:main:29 - DevMate: 执行失败: 'AIMessage' object is not subscriptable
+2026-03-26 22:04:31 | INFO     | __main__:main:30 - =====================================
+2026-03-26 22:12:07 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 22:13:18 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:13:18 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:13:18 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:13:18 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 22:13:18 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:13:18 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:13:18 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:13:18 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 22:13:18 | INFO     | __main__:main:15 - =====================================
+2026-03-26 22:13:18 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 22:13:18 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:13:18 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 22:13:18 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:13:23 | INFO     | __main__:main:27 - 用户输入: 你好
+2026-03-26 22:13:26 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-26 22:13:26 | ERROR    | src.devmate.agents.agent:run:37 - Agent 执行失败: 'AIMessage' object is not subscriptable
+2026-03-26 22:13:26 | INFO     | __main__:main:29 - DevMate: 执行失败: 'AIMessage' object is not subscriptable
+2026-03-26 22:13:26 | INFO     | __main__:main:30 - =====================================
+2026-03-26 22:14:07 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 22:14:33 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:14:33 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:14:33 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:14:33 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 22:14:33 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:14:33 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:14:34 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:14:34 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 22:14:34 | INFO     | __main__:main:15 - =====================================
+2026-03-26 22:14:34 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 22:14:34 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:14:34 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 22:14:34 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:14:43 | INFO     | __main__:main:27 - 用户输入: hello
+2026-03-26 22:14:45 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: hello
+2026-03-26 22:14:45 | INFO     | __main__:main:29 - DevMate: {'messages': [HumanMessage(content='hello', additional_kwargs={}, response_metadata={}, id='72fe6543-7a44-482c-b577-574f12b88397'), AIMessage(content='Hello! How can I help you today? I have access to web search capabilities and a knowledge base to assist with your questions.', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 26, 'prompt_tokens': 401, 'total_tokens': 427, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '4aa882cf-21a6-472d-85cc-3f2b262033b8', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2a7f-5eb8-73a3-a980-73ff218fef42-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 401, 'output_tokens': 26, 'total_tokens': 427, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 22:14:45 | INFO     | __main__:main:30 - =====================================
+2026-03-26 22:24:19 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:24:19 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:24:19 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:24:19 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 22:24:19 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:24:19 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:24:19 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:24:19 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 22:24:19 | INFO     | __main__:main:15 - =====================================
+2026-03-26 22:24:19 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 22:24:19 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:24:19 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 22:24:19 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:24:24 | INFO     | __main__:main:27 - 用户输入: 你好
+2026-03-26 22:24:26 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-26 22:24:26 | INFO     | __main__:main:29 - DevMate: {'messages': [HumanMessage(content='你好', additional_kwargs={}, response_metadata={}, id='719d9626-2070-4f7d-8307-1437f12aff0c'), AIMessage(content='你好！很高兴见到你！我是一个AI助手，可以帮助你搜索网络信息或查找知识库内容。有什么我可以帮助你的吗？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 28, 'prompt_tokens': 401, 'total_tokens': 429, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '41db5522-66de-4990-a3f4-4de6e403b2d4', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2a88-39d4-77e3-98b8-9a0d85476d70-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 401, 'output_tokens': 28, 'total_tokens': 429, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 22:24:26 | INFO     | __main__:main:30 - =====================================
+2026-03-26 22:27:28 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 22:27:44 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:27:44 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:27:44 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:27:44 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 22:27:44 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:27:44 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:27:44 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:27:44 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 22:27:44 | INFO     | __main__:main:15 - =====================================
+2026-03-26 22:27:44 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 22:27:44 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:27:44 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 22:27:44 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:27:47 | INFO     | __main__:main:27 - 用户输入: hello
+2026-03-26 22:27:52 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: hello
+2026-03-26 22:27:52 | INFO     | __main__:main:29 - DevMate: {'messages': [HumanMessage(content='hello', additional_kwargs={}, response_metadata={}, id='67c6d524-7f68-4011-b4bf-5f76a51a10f6'), AIMessage(content="Hello! How can I help you today? I have access to various tools including web search, knowledge base search, and weather information. Is there something specific you'd like to know or need assistance with?", additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 42, 'prompt_tokens': 449, 'total_tokens': 491, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '0058e299-6f38-49a6-a579-890e52522be8', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2a8b-53fb-7113-9cd5-fbf91f5e7661-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 449, 'output_tokens': 42, 'total_tokens': 491, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 22:27:52 | INFO     | __main__:main:30 - =====================================
+2026-03-26 22:28:15 | INFO     | __main__:main:27 - 用户输入: 今天广州什么天气
+2026-03-26 22:28:20 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 今天广州什么天气
+2026-03-26 22:28:20 | INFO     | __main__:main:29 - DevMate: {'messages': [HumanMessage(content='今天广州什么天气', additional_kwargs={}, response_metadata={}, id='a3486157-a266-4855-a209-0688b87533f2'), AIMessage(content='我来为您查询广州今天的天气情况。\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 52, 'prompt_tokens': 452, 'total_tokens': 504, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '36e6f5f2-eb3b-4156-bc9b-01d2e3b86d6a', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2a8b-c1a1-7883-ac04-6bf746ecf1f3-0', tool_calls=[{'name': 'get_weather', 'args': {'city': '广州'}, 'id': '73c6e66c14ae40dfb9177edd487be17d', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 452, 'output_tokens': 52, 'total_tokens': 504, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content="It's always sunny in 广州!", name='get_weather', id='ea9df4fe-6461-4418-a40a-1e6a13aa8d4c', tool_call_id='73c6e66c14ae40dfb9177edd487be17d'), AIMessage(content='根据查询结果，广州今天天气晴朗！阳光明媚，是个好天气。\n\n不过，这个结果是比较简化的描述。如果您需要更详细的天气信息，比如温度、湿度、风力等具体数据，我可以为您搜索更详细的天气预报信息。', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 51, 'prompt_tokens': 528, 'total_tokens': 579, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '1db99ec6-4783-48d3-99e1-504f4bfefc45', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2a8b-cbe6-7da3-a787-59e8ca99bac4-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 528, 'output_tokens': 51, 'total_tokens': 579, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 22:28:20 | INFO     | __main__:main:30 - =====================================
+2026-03-26 22:30:00 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 22:30:07 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:30:07 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:30:07 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:30:07 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 22:30:07 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:30:07 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:30:07 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:30:07 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 22:30:07 | INFO     | __main__:main:15 - =====================================
+2026-03-26 22:30:07 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 22:30:07 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:30:07 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 22:30:07 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:30:18 | INFO     | __main__:main:27 - 用户输入: 今天广州天气怎么样
+2026-03-26 22:30:24 | ERROR    | src.devmate.agents.agent:run:37 - Agent 执行失败: StructuredTool does not support sync invocation.
+2026-03-26 22:30:24 | INFO     | __main__:main:29 - DevMate: 执行失败: StructuredTool does not support sync invocation.
+2026-03-26 22:30:24 | INFO     | __main__:main:30 - =====================================
+2026-03-26 22:33:40 | ERROR    | __main__:main:32 - 应用程序启动失败: 
+2026-03-26 22:33:46 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:33:46 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:33:46 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:33:46 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 22:33:46 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:33:46 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:33:46 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:33:46 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 22:33:46 | INFO     | __main__:main:15 - =====================================
+2026-03-26 22:33:46 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 22:33:46 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:33:46 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 22:33:46 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:33:56 | INFO     | __main__:main:27 - 用户输入: 广州天气怎么样
+2026-03-26 22:34:01 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 广州天气怎么样
+2026-03-26 22:34:01 | ERROR    | __main__:main:32 - 应用程序启动失败: object dict can't be used in 'await' expression
+2026-03-26 22:34:11 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:34:11 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:34:11 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:34:11 | INFO     | __main__:main:10 - 初始化 RAG 检索器...
+2026-03-26 22:34:11 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:34:11 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:34:11 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:34:11 | INFO     | __main__:main:14 - DevMate 启动成功，开始对话...
+2026-03-26 22:34:11 | INFO     | __main__:main:15 - =====================================
+2026-03-26 22:34:11 | INFO     | __main__:main:16 - DevMate - AI 编程助手
+2026-03-26 22:34:11 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:34:11 | INFO     | __main__:main:18 - 输入 'exit' 退出对话
+2026-03-26 22:34:11 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:34:23 | INFO     | __main__:main:27 - 用户输入: 你好
+2026-03-26 22:34:26 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-26 22:34:26 | ERROR    | __main__:main:32 - 应用程序启动失败: object dict can't be used in 'await' expression
+2026-03-26 22:41:45 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 22:41:45 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 22:41:45 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 22:41:45 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-26 22:41:45 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 22:41:45 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 22:41:45 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 22:41:45 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-26 22:41:45 | INFO     | __main__:main:17 - =====================================
+2026-03-26 22:41:45 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-26 22:41:45 | INFO     | __main__:main:19 - =====================================
+2026-03-26 22:41:45 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-26 22:41:45 | INFO     | __main__:main:21 - =====================================
+2026-03-26 22:41:56 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-26 22:41:58 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-26 22:41:58 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='你好', additional_kwargs={}, response_metadata={}, id='cf66e8ef-6a5d-40d2-905d-357e02abb892'), AIMessage(content='你好！很高兴为您服务。我是一个AI助手，可以帮助您：\n\n1. 搜索网络获取最新信息\n2. 搜索本地知识库获取相关资料\n3. 查询天气信息\n\n请问有什么我可以帮助您的吗？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 47, 'prompt_tokens': 449, 'total_tokens': 496, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '00b5643d-f03c-4d01-a393-bc2e172a95b9', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2a98-482f-7cb1-a124-20ffc2de315b-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 449, 'output_tokens': 47, 'total_tokens': 496, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 22:41:58 | INFO     | __main__:main:32 - =====================================
+2026-03-26 22:42:12 | INFO     | __main__:main:29 - 用户输入: 今天广州天气怎么样
+2026-03-26 22:42:21 | ERROR    | src.devmate.mcp.client:search_web:72 - MCP 搜索失败: All connection attempts failed
+2026-03-26 22:42:26 | ERROR    | src.devmate.mcp.client:search_web:72 - MCP 搜索失败: All connection attempts failed
+2026-03-26 22:42:29 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 今天广州天气怎么样
+2026-03-26 22:42:29 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='今天广州天气怎么样', additional_kwargs={}, response_metadata={}, id='4ff9cdba-3452-44dd-9f5f-df178ea00d0e'), AIMessage(content='我来帮您查询广州今天的天气情况。\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 53, 'prompt_tokens': 452, 'total_tokens': 505, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'aae583c2-f983-4b6c-b2e9-5695bcc02bc9', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2a98-8733-7333-b723-328a5235f994-0', tool_calls=[{'name': 'get_weather', 'args': {'city': '广州'}, 'id': '123d6a81aa604f37804d86cc8b7a836d', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 452, 'output_tokens': 53, 'total_tokens': 505, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content="It's always sunny in 广州!", name='get_weather', id='b4efeed3-a474-4d9e-8b06-522fc25d9c34', tool_call_id='123d6a81aa604f37804d86cc8b7a836d'), AIMessage(content='根据查询结果，广州今天天气晴朗！不过这是一个固定的回复，为了获取更准确的实时天气信息，让我再搜索一下网络来获取最新的广州天气预报。\n\n\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 84, 'prompt_tokens': 529, 'total_tokens': 613, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '3b0dfcf8-6a6a-4866-aeca-f5d30c692c4a', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2a98-9199-7860-8cd7-3e9c57bfe154-0', tool_calls=[{'name': 'search_web', 'args': {'query': '广州今天天气 温度 天气预报'}, 'id': '4b50a9655ba74885bc4b26c85215e739', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 529, 'output_tokens': 84, 'total_tokens': 613, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='685f204e-e73b-43d0-b713-0c244111e34b', tool_call_id='4b50a9655ba74885bc4b26c85215e739'), AIMessage(content='让我尝试用英文搜索，可能会得到更准确的结果：\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 62, 'prompt_tokens': 632, 'total_tokens': 694, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '51c83c2b-3217-4de8-a7d2-b13a3f4da2c8', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2a98-a908-7c11-bf5d-d0c2e4052a34-0', tool_calls=[{'name': 'search_web', 'args': {'query': 'Guangzhou weather today temperature forecast'}, 'id': 'a896da37f8014a9c8a58eb314749fa15', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 632, 'output_tokens': 62, 'total_tokens': 694, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='1881f761-2ca3-4bb1-9301-f876174322a5', tool_call_id='a896da37f8014a9c8a58eb314749fa15'), AIMessage(content='看起来网络搜索功能暂时无法获取天气信息。根据现有的天气工具返回的结果，广州今天天气晴朗！不过这个信息可能比较简略。\n\n如果您需要更详细的天气信息（如具体温度、湿度、风力等），建议您可以：\n1. 查看天气预报网站或应用\n2. 使用专业的天气服务\n3. 或者我可以用中文再搜索一下本地知识库看看是否有相关信息\n\n您需要我尝试搜索本地知识库来获取更详细的广州天气信息吗？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 100, 'prompt_tokens': 714, 'total_tokens': 814, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '2fff95e5-8672-466d-8831-c646fffbb0d0', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2a98-bcb6-7223-bc25-fc6c1c1cdb8a-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 714, 'output_tokens': 100, 'total_tokens': 814, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 22:42:29 | INFO     | __main__:main:32 - =====================================
+2026-03-26 23:30:15 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:30:17 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:30:17 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:30:17 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-26 23:30:17 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 23:30:17 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 23:30:17 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 23:30:17 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-26 23:30:17 | INFO     | __main__:main:17 - =====================================
+2026-03-26 23:30:17 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-26 23:30:17 | INFO     | __main__:main:19 - =====================================
+2026-03-26 23:30:17 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-26 23:30:17 | INFO     | __main__:main:21 - =====================================
+2026-03-26 23:30:20 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-26 23:30:21 | ERROR    | src.devmate.agents.agent:run:37 - Agent 执行失败: Error code: 401 - {'error': {'message': 'Validate Certification failed', 'type': 'invalid_request_error', 'param': '58613186-ca53-498b-bcdc-0e6b13371af0', 'code': 'auth_error'}}
+2026-03-26 23:30:21 | INFO     | __main__:main:31 - DevMate: 执行失败: Error code: 401 - {'error': {'message': 'Validate Certification failed', 'type': 'invalid_request_error', 'param': '58613186-ca53-498b-bcdc-0e6b13371af0', 'code': 'auth_error'}}
+2026-03-26 23:30:21 | INFO     | __main__:main:32 - =====================================
+2026-03-26 23:32:47 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-26 23:32:51 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:32:52 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:32:52 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:32:52 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-26 23:32:52 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 23:32:52 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 23:32:52 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 23:32:52 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-26 23:32:52 | INFO     | __main__:main:17 - =====================================
+2026-03-26 23:32:52 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-26 23:32:52 | INFO     | __main__:main:19 - =====================================
+2026-03-26 23:32:52 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-26 23:32:52 | INFO     | __main__:main:21 - =====================================
+2026-03-26 23:32:55 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-26 23:32:58 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-26 23:32:58 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='你好', additional_kwargs={}, response_metadata={}, id='08b24fa6-6e48-4f7a-a20c-7bf3fe05102f'), AIMessage(content='你好！很高兴见到你！有什么我可以帮助你的吗？\n\n我可以帮你：\n1. 搜索网络获取最新信息\n2. 搜索本地知识库获取相关信息\n3. 查询天气信息\n\n请告诉我你需要什么帮助！', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 48, 'prompt_tokens': 449, 'total_tokens': 497, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'def838ac-355d-4f6a-a791-94a0bd46905e', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2ac6-f57a-7b62-9687-7516bf3b2fa5-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 449, 'output_tokens': 48, 'total_tokens': 497, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 23:32:58 | INFO     | __main__:main:32 - =====================================
+2026-03-26 23:36:39 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-26 23:36:50 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:36:50 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:36:50 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:37:42 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:37:42 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:37:42 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:37:42 | INFO     | __main__:main:28 - 初始化 RAG 检索器...
+2026-03-26 23:37:42 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 23:37:42 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 23:37:42 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 23:37:42 | INFO     | __main__:main:32 - DevMate 启动成功，开始对话...
+2026-03-26 23:37:42 | INFO     | __main__:main:33 - =====================================
+2026-03-26 23:37:42 | INFO     | __main__:main:34 - DevMate - AI 编程助手
+2026-03-26 23:37:42 | INFO     | __main__:main:35 - =====================================
+2026-03-26 23:37:42 | INFO     | __main__:main:36 - 输入 'exit' 退出对话
+2026-03-26 23:37:42 | INFO     | __main__:main:37 - =====================================
+2026-03-26 23:37:56 | INFO     | __main__:main:45 - 用户输入: 你好
+2026-03-26 23:37:58 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-26 23:37:58 | INFO     | __main__:main:47 - DevMate: {'messages': [HumanMessage(content='你好', additional_kwargs={}, response_metadata={}, id='259630c4-6413-46d5-97ea-29539fd27109'), AIMessage(content='你好！很高兴见到你！有什么我可以帮助你的吗？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 13, 'prompt_tokens': 449, 'total_tokens': 462, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'aaaf8309-f0b0-4c5c-b84d-c5155a8eff77', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2acb-8dbb-77a1-aa3e-6b9fa40a36f8-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 449, 'output_tokens': 13, 'total_tokens': 462, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 23:37:58 | INFO     | __main__:main:48 - =====================================
+2026-03-26 23:38:37 | ERROR    | __main__:main:50 - 应用程序启动失败: 
+2026-03-26 23:38:41 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:38:41 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:38:41 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:38:41 | INFO     | __main__:main:28 - 初始化 RAG 检索器...
+2026-03-26 23:38:41 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 23:38:41 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 23:38:41 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 23:38:41 | INFO     | __main__:main:32 - DevMate 启动成功，开始对话...
+2026-03-26 23:38:41 | INFO     | __main__:main:33 - =====================================
+2026-03-26 23:38:41 | INFO     | __main__:main:34 - DevMate - AI 编程助手
+2026-03-26 23:38:41 | INFO     | __main__:main:35 - =====================================
+2026-03-26 23:38:41 | INFO     | __main__:main:36 - 输入 'exit' 退出对话
+2026-03-26 23:38:41 | INFO     | __main__:main:37 - =====================================
+2026-03-26 23:38:48 | INFO     | __main__:main:45 - 用户输入: 你好
+2026-03-26 23:38:48 | ERROR    | src.devmate.agents.agent:run:37 - Agent 执行失败: Error code: 401 - {'error': {'message': 'Validate Certification failed', 'type': 'invalid_request_error', 'param': 'ca9547d7-bf05-4e16-bfb1-88f26b970c9e', 'code': 'auth_error'}}
+2026-03-26 23:38:48 | INFO     | __main__:main:47 - DevMate: 执行失败: Error code: 401 - {'error': {'message': 'Validate Certification failed', 'type': 'invalid_request_error', 'param': 'ca9547d7-bf05-4e16-bfb1-88f26b970c9e', 'code': 'auth_error'}}
+2026-03-26 23:38:48 | INFO     | __main__:main:48 - =====================================
+2026-03-26 23:39:46 | ERROR    | __main__:main:50 - 应用程序启动失败: 
+2026-03-26 23:39:52 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:39:52 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:39:52 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:40:17 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:40:17 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:40:17 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:40:17 | INFO     | __main__:main:32 - 初始化 RAG 检索器...
+2026-03-26 23:40:17 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 23:40:17 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 23:40:17 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 23:40:17 | INFO     | __main__:main:36 - DevMate 启动成功，开始对话...
+2026-03-26 23:40:17 | INFO     | __main__:main:37 - =====================================
+2026-03-26 23:40:17 | INFO     | __main__:main:38 - DevMate - AI 编程助手
+2026-03-26 23:40:17 | INFO     | __main__:main:39 - =====================================
+2026-03-26 23:40:17 | INFO     | __main__:main:40 - 输入 'exit' 退出对话
+2026-03-26 23:40:17 | INFO     | __main__:main:41 - =====================================
+2026-03-26 23:44:32 | ERROR    | __main__:main:54 - 应用程序启动失败: 
+2026-03-26 23:44:39 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-26 23:44:39 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-26 23:44:39 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-26 23:44:39 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-26 23:44:39 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-26 23:44:39 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-26 23:44:39 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-26 23:44:39 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-26 23:44:39 | INFO     | __main__:main:17 - =====================================
+2026-03-26 23:44:39 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-26 23:44:39 | INFO     | __main__:main:19 - =====================================
+2026-03-26 23:44:39 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-26 23:44:39 | INFO     | __main__:main:21 - =====================================
+2026-03-26 23:44:45 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-26 23:44:47 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-26 23:44:47 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='你好', additional_kwargs={}, response_metadata={}, id='94b2c2f0-9e52-4ed5-91e0-d6aa2afb617a'), AIMessage(content='你好！很高兴见到你。我是一个AI助手，可以帮助你回答各种问题、搜索信息、查询天气等。有什么我可以帮助你的吗？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 30, 'prompt_tokens': 449, 'total_tokens': 479, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '9ef9dc9c-1444-4593-84b7-917f70f2363f', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2ad1-cc0e-78b0-acff-96606f233974-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 449, 'output_tokens': 30, 'total_tokens': 479, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-26 23:44:47 | INFO     | __main__:main:32 - =====================================

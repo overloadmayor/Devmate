@@ -2,8 +2,7 @@ from langchain.tools import tool
 from ..mcp.client import mcp_client
 from ..rag.retriever import retriever
 from ..utils.logger import logger
-
-@tool
+from langchain_tavily import TavilySearch
 async def search_web(query: str) -> str:
     """搜索网络获取最新信息
     
@@ -33,7 +32,6 @@ async def search_web(query: str) -> str:
         logger.error(f"搜索工具执行失败: {e}")
         return f"搜索失败: {str(e)}"
 
-@tool
 async def search_knowledge_base(query: str) -> str:
     """搜索本地知识库获取相关信息
     
@@ -60,3 +58,7 @@ async def search_knowledge_base(query: str) -> str:
     except Exception as e:
         logger.error(f"知识库搜索工具执行失败: {e}")
         return f"知识库搜索失败: {str(e)}"
+
+def get_weather(city: str) -> str:
+    """Get weather for a given city."""
+    return f"It's always sunny in {city}!"

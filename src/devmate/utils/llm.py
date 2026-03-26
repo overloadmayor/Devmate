@@ -21,13 +21,13 @@ def get_llm():
 def get_embeddings():
     """获取 Embedding 实例"""
     try:
-        model_config = config.model
+        embedding_config = config.embedding
         embeddings = OpenAIEmbeddings(
-            base_url=model_config.get("ai_base_url"),
-            api_key=model_config.get("api_key"),
-            model=model_config.get("embedding_model_name")
+            base_url=embedding_config.get("ai_base_url"),
+            api_key=embedding_config.get("api_key"),
+            model=embedding_config.get("model_name")
         )
-        logger.info(f"Embedding 初始化成功: {model_config.get('embedding_model_name')}")
+        logger.info(f"Embedding 初始化成功: {embedding_config.get('model_name')}")
         return embeddings
     except Exception as e:
         logger.error(f"Embedding 初始化失败: {e}")

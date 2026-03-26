@@ -1,17 +1,19 @@
-# DevMate 配置文件
-
 [model]
-ai_base_url = "https://api.openai.com/v1"
-api_key = "your_openai_api_key_here"
-model_name = "gpt-4o"
-embedding_model_name = "text-embedding-3-small"
+ai_base_url = "https://api.modelverse.cn/v1/"
+api_key = "${MODEL_API_KEY}"
+model_name = "deepseek-ai/DeepSeek-V3.2"
+
+[embedding]
+ai_base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+api_key = "${EMBEDDING_API_KEY}"
+model_name = "text-embedding-v4"
 
 [search]
-tavily_api_key = "your_tavily_api_key_here"
+tavily_api_key = "${TAVILY_API_KEY}"
 
 [langsmith]
 langchain_tracing_v2 = true
-langchain_api_key = "your_langchain_api_key_here"
+langchain_api_key = "${LANGCHAIN_API_KEY}"
 
 [skills]
 skills_dir = ".skills"
