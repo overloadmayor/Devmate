@@ -2,8 +2,10 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uvicorn
 from langchain_tavily import TavilySearch
+
 from ..utils.config import config
 from ..utils.logger import logger
+
 
 app = FastAPI()
 

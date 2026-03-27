@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 .env
+devmate.log
+run.sh
+uv.lock
+vector_db/
+
+vector_db/chroma.sqlite3

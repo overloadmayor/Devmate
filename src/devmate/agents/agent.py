@@ -1,22 +1,31 @@
 from langchain.agents import create_agent
 from ..utils.llm import get_llm
-from ..tools.tools import search_web, search_knowledge_base, get_weather
+from ..tools.tools import search_web, search_knowledge_base, get_weather, load_skill
 from ..utils.logger import logger
 from ..utils.config import config
+from .prompts import SYSTEM_PROMPT
+from ..skills.manager import skills_manager
 
 class DevMateAgent:
     def __init__(self):
         self.llm = get_llm()
-        self.tools = [search_web, search_knowledge_base, get_weather]
+        self.tools = [search_web, search_knowledge_base, get_weather, load_skill]
         self.agent = self._create_agent()
     
     def _create_agent(self):
         """创建 Agent"""
         try:
+            skills_prompt = skills_manager.get_skills_prompt()
+            enhanced_system_prompt = SYSTEM_PROMPT
+            
+            if skills_prompt:
+                enhanced_system_prompt += "\n\n" + skills_prompt
+            
             # 创建 Agent
             agent = create_agent(
                 self.llm,
-                self.tools
+                self.tools,
+                system_prompt=enhanced_system_prompt
             )
             
             logger.info("Agent 初始化成功")

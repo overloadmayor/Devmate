@@ -3,6 +3,7 @@ from ..mcp.client import mcp_client
 from ..rag.retriever import retriever
 from ..utils.logger import logger
 from langchain_tavily import TavilySearch
+from ..skills.manager import skills_manager
 async def search_web(query: str) -> str:
     """搜索网络获取最新信息
     
@@ -62,3 +63,23 @@ async def search_knowledge_base(query: str) -> str:
 def get_weather(city: str) -> str:
     """Get weather for a given city."""
     return f"It's always sunny in {city}!"
+
+
+@tool
+def load_skill(skill_name: str) -> str:
+    """Load a specialized skill prompt.
+
+    Available skills:
+    - create-fastapi-service: 创建 FastAPI 服务的基础结构和文件，包括 main.py、requirements.txt 等必要文件
+    - create-python-project: 创建 Python 项目的基础结构和配置文件，包括 src/、tests/、docs/ 等目录
+
+    Returns: skill's prompt and context.
+    """
+    skill = skills_manager.get_skill(skill_name)
+    if not skill:
+        return f"技能 {skill_name} 不存在"
+    
+    if not skill.prompt_template:
+        return f"技能 {skill_name} 没有提示词模板"
+    
+    return f"## {skill.name}\n{skill.description}\n\n{skill.prompt_template}"

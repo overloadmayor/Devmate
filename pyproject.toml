@@ -18,8 +18,22 @@ dependencies = [
     "fastapi",
     "uvicorn",
     "httpx",
+    "mcp>=1.26.0",
 ]
 
 [[tool.uv.index]]
 url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
 default = true
+
+[tool.uv.workspace]
+members = [
+    ".",
+]
+
+[tool.uv.sources]
+devmate = { workspace = true, editable = true }
+
+[dependency-groups]
+dev = [
+    "devmate",
+]
