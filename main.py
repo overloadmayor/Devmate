@@ -27,6 +27,7 @@ async def main():
                 break
             
             logger.info(f"用户输入: {user_input}")
+            logger.info("正在生成.......")
             result = await agent.run(user_input)
             logger.info(f"DevMate: {result}")
             logger.info("=====================================")
