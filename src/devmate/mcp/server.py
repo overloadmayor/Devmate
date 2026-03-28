@@ -56,7 +56,6 @@ async def search_web(request: SearchRequest):
         
         invoke_params = {
             "query": request.query,
-            "max_results": request.max_results,
             "topic": request.topic,
             "search_depth": request.search_depth,
             "time_range": request.time_range,

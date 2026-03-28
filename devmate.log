@@ -1,0 +1,2021 @@
+2026-03-27 14:34:54 | INFO     | __main__:startup_event:50 - Tavily 客户端初始化成功
+2026-03-27 14:36:31 | INFO     | __main__:search_web:86 - 搜索完成: Python 3.13 features
+2026-03-27 14:36:31 | INFO     | devmate.mcp.client:search_web:69 - MCP 搜索成功: Python 3.13 features
+2026-03-27 14:40:08 | INFO     | __main__:startup_event:50 - Tavily 客户端初始化成功
+2026-03-27 14:41:25 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 14:41:25 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 14:41:25 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-27 14:41:25 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 14:41:25 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 0 个文档
+2026-03-27 14:41:25 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 0 个片段
+2026-03-27 14:41:25 | INFO     | src.devmate.rag.retriever:ingest_documents:50 - 没有文档需要摄入，创建空向量存储
+2026-03-27 14:41:25 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 14:41:25 | INFO     | __main__:main:17 - =====================================
+2026-03-27 14:41:25 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 14:41:25 | INFO     | __main__:main:19 - =====================================
+2026-03-27 14:41:25 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 14:41:25 | INFO     | __main__:main:21 - =====================================
+2026-03-27 14:41:29 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-27 14:41:32 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 你好
+2026-03-27 14:41:32 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='你好', additional_kwargs={}, response_metadata={}, id='3c450c8b-3c84-44d3-812f-0716f02cec8a'), AIMessage(content='你好！很高兴见到你。我是你的助手，可以帮你搜索网络信息、查询本地知识库，或者获取天气信息。有什么我可以帮助你的吗？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 32, 'prompt_tokens': 449, 'total_tokens': 481, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '5fe85438-9543-45ad-8da9-cbca5a2a4218', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2e06-c8da-7f61-93d6-c7a7d9de507c-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 449, 'output_tokens': 32, 'total_tokens': 481, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 14:41:32 | INFO     | __main__:main:32 - =====================================
+2026-03-27 14:41:45 | INFO     | __main__:main:29 - 用户输入: 今天有什么新闻
+2026-03-27 14:41:49 | INFO     | __main__:search_web:86 - 搜索完成: 今天最新新闻 国内国际重要新闻
+2026-03-27 14:41:49 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 今天最新新闻 国内国际重要新闻
+2026-03-27 14:41:52 | INFO     | __main__:search_web:86 - 搜索完成: 2024年最新新闻 时事热点
+2026-03-27 14:41:52 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 2024年最新新闻 时事热点
+2026-03-27 14:41:56 | INFO     | __main__:search_web:86 - 搜索完成: breaking news today current events
+2026-03-27 14:41:56 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: breaking news today current events
+2026-03-27 14:42:00 | ERROR    | src.devmate.rag.retriever:search_knowledge_base:74 - 搜索知识库失败: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, contents is neither str nor list of str.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '6ae54fb1-eab6-912f-a7b1-b714c67eaa6d', 'request_id': '6ae54fb1-eab6-912f-a7b1-b714c67eaa6d'}
+2026-03-27 14:42:06 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 今天有什么新闻
+2026-03-27 14:42:06 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='今天有什么新闻', additional_kwargs={}, response_metadata={}, id='57f859d0-434f-4c32-a414-cd9c544623ac'), AIMessage(content='我来为您搜索一下今天的新闻', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 58, 'prompt_tokens': 451, 'total_tokens': 509, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'b033561b-5bd8-47f9-ae72-be74f8e5e470', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e07-06b1-7553-a785-5cd97bedb1cc-0', tool_calls=[{'name': 'search_web', 'args': {'query': '今天最新新闻 国内国际重要新闻'}, 'id': '7013a6607c8c44a4b6c5caae39ecf322', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 451, 'output_tokens': 58, 'total_tokens': 509, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='b81dfc39-0e0f-4cee-a0e9-e41ead950a63', tool_call_id='7013a6607c8c44a4b6c5caae39ecf322'), AIMessage(content='让我尝试不同的搜索关键词来获取今天的新闻\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 61, 'prompt_tokens': 528, 'total_tokens': 589, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '61c949fe-3039-4d03-bcda-4ab2fb12ddc2', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e07-153c-7ba3-ab27-9dbfd2e2877b-0', tool_calls=[{'name': 'search_web', 'args': {'query': '2024年最新新闻 时事热点'}, 'id': '4f445431e4814745805218702b3d004e', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 528, 'output_tokens': 61, 'total_tokens': 589, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='931f912a-62a1-4477-b4cf-27b8bbfec29d', tool_call_id='4f445431e4814745805218702b3d004e'), AIMessage(content='让我再尝试搜索一下当前的重要新闻\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 56, 'prompt_tokens': 608, 'total_tokens': 664, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '63fa0b56-ba5a-4d10-80a2-e5a91952b04d', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e07-233a-7661-957b-6790c9756abe-0', tool_calls=[{'name': 'search_web', 'args': {'query': 'breaking news today current events'}, 'id': '1709b0cef25a49e8bf577554d8fa847d', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 608, 'output_tokens': 56, 'total_tokens': 664, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='dbed3d80-ccc1-456d-9538-0350f3a271f2', tool_call_id='1709b0cef25a49e8bf577554d8fa847d'), AIMessage(content='看起来网络搜索功能暂时无法获取最新的新闻信息。让我尝试搜索本地知识库，看看是否有相关的新闻信息：\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 75, 'prompt_tokens': 684, 'total_tokens': 759, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'f966f6e6-af86-4906-8551-0cd1de2968ce', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e07-2fc0-73b3-a1de-95ef7979a2b3-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': '新闻 时事 最新消息'}, 'id': '1c4af4e4d2e74b22a64f6c056e18b858', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 684, 'output_tokens': 75, 'total_tokens': 759, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='知识库中未找到相关信息', name='search_knowledge_base', id='5e8083f1-40c4-4b84-bc27-edb1e965fa47', tool_call_id='1c4af4e4d2e74b22a64f6c056e18b858'), AIMessage(content='很抱歉，目前我无法通过搜索功能获取到最新的新闻信息。网络搜索功能可能暂时无法正常工作。\n\n您可以尝试通过以下方式获取今天的新闻：\n\n1. 访问主流新闻网站如新华网、人民网、央视新闻等\n2. 使用新闻应用如腾讯新闻、今日头条、网易新闻等\n3. 关注电视新闻节目\n\n如果您对特定领域的新闻感兴趣（如科技、财经、体育等），我可以尝试为您提供一般性的信息或建议。或者，您也可以告诉我您对什么类型的新闻感兴趣，我会尽力为您提供相关的背景信息。', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 121, 'prompt_tokens': 782, 'total_tokens': 903, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'b37d87aa-27bd-4746-b831-6aaf3cadb483', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2e07-4139-79f1-ab09-3d8277a635f5-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 782, 'output_tokens': 121, 'total_tokens': 903, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 14:42:06 | INFO     | __main__:main:32 - =====================================
+2026-03-27 14:43:10 | INFO     | __main__:main:29 - 用户输入: 网易裁员了吗
+2026-03-27 14:43:13 | INFO     | __main__:search_web:86 - 搜索完成: 网易裁员 2024 最新消息
+2026-03-27 14:43:13 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 网易裁员 2024 最新消息
+2026-03-27 14:43:16 | INFO     | __main__:search_web:86 - 搜索完成: 网易公司 裁员 员工 2023 2024
+2026-03-27 14:43:16 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 网易公司 裁员 员工 2023 2024
+2026-03-27 14:43:20 | INFO     | __main__:search_web:86 - 搜索完成: 网易 最新消息 员工 调整
+2026-03-27 14:43:20 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 网易 最新消息 员工 调整
+2026-03-27 14:43:24 | INFO     | __main__:search_web:86 - 搜索完成: 网易公司 新闻 人事 调整
+2026-03-27 14:43:24 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 网易公司 新闻 人事 调整
+2026-03-27 14:43:32 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 网易裁员了吗
+2026-03-27 14:43:32 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='网易裁员了吗', additional_kwargs={}, response_metadata={}, id='7577ef88-35e8-4732-b3d7-5be135d30b4f'), AIMessage(content='我来帮您搜索关于网易裁员的最新信息', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 61, 'prompt_tokens': 451, 'total_tokens': 512, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'f45e8c77-0d3a-40be-9aa7-1449217c8f50', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e08-516b-7e22-af8e-ac3c8ef01967-0', tool_calls=[{'name': 'search_web', 'args': {'query': '网易裁员 2024 最新消息'}, 'id': '51f63126a72a4669b656332f3a573cbd', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 451, 'output_tokens': 61, 'total_tokens': 512, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='8d04b674-3069-4fe4-9fd6-c8a3e741e523', tool_call_id='51f63126a72a4669b656332f3a573cbd'), AIMessage(content='让我尝试更广泛的搜索\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 60, 'prompt_tokens': 531, 'total_tokens': 591, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'e25dd709-5bfd-49de-a445-a40d0268bddd', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e08-5df9-7d32-be4d-de8cabea95d0-0', tool_calls=[{'name': 'search_web', 'args': {'query': '网易公司 裁员 员工 2023 2024'}, 'id': 'c7981768602a475ca51e211a85ec0e32', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 531, 'output_tokens': 60, 'total_tokens': 591, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='dd35d043-9fb9-44f8-b49b-f979b567a756', tool_call_id='c7981768602a475ca51e211a85ec0e32'), AIMessage(content='让我搜索网易最近的新闻和动态', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 59, 'prompt_tokens': 611, 'total_tokens': 670, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '95868851-8f44-44cf-a80d-65a3cb923415', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e08-6b3b-70d1-b263-d9cd1142be54-0', tool_calls=[{'name': 'search_web', 'args': {'query': '网易 最新消息 员工 调整'}, 'id': '8a17ca992cf54e5aa4e3a931ca1f5769', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 611, 'output_tokens': 59, 'total_tokens': 670, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='9f40e909-1ab8-4853-a4b8-f8dbc526de7d', tool_call_id='8a17ca992cf54e5aa4e3a931ca1f5769'), AIMessage(content='让我搜索网易的公司新闻\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 56, 'prompt_tokens': 689, 'total_tokens': 745, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'f62f484d-b4f7-49b0-85b4-821f7cf89419', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2e08-7a3c-70b1-b2f8-589c9ab8045f-0', tool_calls=[{'name': 'search_web', 'args': {'query': '网易公司 新闻 人事 调整'}, 'id': 'e2b137c794494c5ea06c46c55670cc81', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 689, 'output_tokens': 56, 'total_tokens': 745, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='1de90827-49ed-42f8-a519-de6236a9e16f', tool_call_id='e2b137c794494c5ea06c46c55670cc81'), AIMessage(content='基于目前的搜索结果，我没有找到关于网易裁员的明确最新信息。这可能是因为：\n\n1. **没有大规模的公开裁员**：如果网易有大规模裁员，通常会有媒体报道\n2. **信息时效性**：我搜索到的信息可能没有包含最新的动态\n3. **公司正常的人员调整**：大型科技公司通常会有正常的员工流动和优化调整\n\n为了获得更准确的信息，建议您：\n\n1. **查看官方渠道**：关注网易官方公告或财报中的员工人数变化\n2. **关注财经媒体**：查看主流财经媒体对网易的最新报道\n3. **留意社交媒体**：有时员工会在社交媒体上分享相关信息\n\n根据我的了解，互联网行业近年来确实面临一些挑战，许多公司都在进行组织优化和效率提升，但这不一定意味着大规模裁员。\n\n您是否需要我搜索其他相关信息，比如网易的最新财报或业务动态？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 179, 'prompt_tokens': 765, 'total_tokens': 944, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '3f032d23-1f8e-4a8b-a374-0e645fdd1a9e', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2e08-8889-71f2-9afb-3562f4aa72bf-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 765, 'output_tokens': 179, 'total_tokens': 944, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 14:43:32 | INFO     | __main__:main:32 - =====================================
+2026-03-27 14:43:51 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-27 19:47:52 | INFO     | __main__:startup_event:47 - Tavily 客户端初始化成功
+2026-03-27 19:48:35 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 19:48:36 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 19:48:36 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-27 19:48:36 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 19:48:36 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 19:48:36 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 19:48:37 | ERROR    | src.devmate.rag.retriever:ingest_documents:52 - 文档摄入失败: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, contents is neither str nor list of str.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'd2f9ed40-99a7-9d4c-86c9-e4f2b1b6cc81', 'request_id': 'd2f9ed40-99a7-9d4c-86c9-e4f2b1b6cc81'}
+2026-03-27 19:48:37 | ERROR    | __main__:main:34 - 应用程序启动失败: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, contents is neither str nor list of str.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': 'd2f9ed40-99a7-9d4c-86c9-e4f2b1b6cc81', 'request_id': 'd2f9ed40-99a7-9d4c-86c9-e4f2b1b6cc81'}
+2026-03-27 19:49:56 | INFO     | src.devmate.utils.llm:get_embeddings:30 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 19:49:57 | INFO     | src.devmate.utils.llm:get_llm:15 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 19:49:57 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-27 19:49:57 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 19:49:57 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 19:49:57 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 19:49:58 | ERROR    | src.devmate.rag.retriever:ingest_documents:52 - 文档摄入失败: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, contents is neither str nor list of str.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '7736ced8-7426-96a5-b512-9304e74b1acf', 'request_id': '7736ced8-7426-96a5-b512-9304e74b1acf'}
+2026-03-27 19:49:58 | ERROR    | __main__:main:34 - 应用程序启动失败: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, contents is neither str nor list of str.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '7736ced8-7426-96a5-b512-9304e74b1acf', 'request_id': '7736ced8-7426-96a5-b512-9304e74b1acf'}
+2026-03-27 19:53:33 | ERROR    | src.devmate.utils.llm:get_embeddings:82 - Embedding 初始化失败: DashscopeEmbeddings.__init__() got an unexpected keyword argument 'model'
+2026-03-27 19:53:47 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 19:53:48 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 19:53:48 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-27 19:53:48 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 19:53:48 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 19:53:48 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 19:53:49 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 19:53:49 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 19:53:49 | INFO     | __main__:main:17 - =====================================
+2026-03-27 19:53:49 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 19:53:49 | INFO     | __main__:main:19 - =====================================
+2026-03-27 19:53:49 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 19:53:49 | INFO     | __main__:main:21 - =====================================
+2026-03-27 19:54:05 | ERROR    | __main__:main:34 - 应用程序启动失败: EOF when reading a line
+2026-03-27 19:55:04 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 19:55:05 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 19:55:05 | INFO     | src.devmate.agents.agent:_create_agent:22 - Agent 初始化成功
+2026-03-27 19:55:05 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 19:55:05 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 19:55:05 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 19:55:05 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 19:55:05 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 19:55:05 | INFO     | __main__:main:17 - =====================================
+2026-03-27 19:55:05 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 19:55:05 | INFO     | __main__:main:19 - =====================================
+2026-03-27 19:55:05 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 19:55:05 | INFO     | __main__:main:21 - =====================================
+2026-03-27 19:55:42 | INFO     | __main__:main:29 - 用户输入:  你好
+2026-03-27 19:55:44 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成:  你好
+2026-03-27 19:55:44 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content=' 你好', additional_kwargs={}, response_metadata={}, id='c06bc3b6-4cff-4bca-a952-4a89f4946354'), AIMessage(content='你好！很高兴见到你。我可以帮你搜索网络信息、查询本地知识库，或者查询天气信息。有什么我可以帮助你的吗？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 28, 'prompt_tokens': 450, 'total_tokens': 478, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'cf738e74-d8c2-4f63-b5d0-014db07680da', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2f26-7374-7d62-963b-f398989b5ba9-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 450, 'output_tokens': 28, 'total_tokens': 478, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 19:55:44 | INFO     | __main__:main:32 - =====================================
+2026-03-27 19:56:50 | INFO     | __main__:main:29 - 用户输入: 本地知识库有什么内容，说一下
+2026-03-27 19:56:53 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 19:56:56 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 19:56:59 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 19:57:03 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 19:57:11 | INFO     | src.devmate.agents.agent:run:32 - Agent 执行完成: 本地知识库有什么内容，说一下
+2026-03-27 19:57:11 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='本地知识库有什么内容，说一下', additional_kwargs={}, response_metadata={}, id='e38f8fb9-8343-4e50-9fb8-f08dc5002063'), AIMessage(content='我来搜索一下本地知识库的内容。\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 61, 'prompt_tokens': 455, 'total_tokens': 516, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'f066d176-0f92-401e-a8cc-3381122aa946', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2f27-7e0f-7533-bfba-c0036d56937d-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': '知识库内容 文档类型 信息分类'}, 'id': 'b629358abf5c472280484ba60ef647e3', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 455, 'output_tokens': 61, 'total_tokens': 516, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='1. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n\n2. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n\n3. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n', name='search_knowledge_base', id='d4a00aba-a31d-4513-af1b-4375d0cb2d8a', tool_call_id='b629358abf5c472280484ba60ef647e3'), AIMessage(content='让我搜索更多关于知识库整体结构的信息：\n\n\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 66, 'prompt_tokens': 765, 'total_tokens': 831, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '4d6faa86-8b30-4bb7-a286-909441525214', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2f27-8a79-79d2-b03f-aba7d7d689a0-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': '知识库 目录 文件列表 文档结构'}, 'id': '68ceb12d1576462e9ea20ae96693fb14', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 765, 'output_tokens': 66, 'total_tokens': 831, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='1. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n2. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n3. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n', name='search_knowledge_base', id='61c6b6e6-c9ce-45be-8737-7b358dae0638', tool_call_id='68ceb12d1576462e9ea20ae96693fb14'), AIMessage(content='让我搜索一下还有哪些其他类型的文档：\n\n\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 64, 'prompt_tokens': 1108, 'total_tokens': 1172, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '41d6b8fc-90a5-4619-b30f-e58894dee4f3', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2f27-9502-7c00-ba26-b925213b9e38-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': '文档 技术文档 API 指南 配置'}, 'id': 'd74e4f808e7f418d8975499fe16fc3ad', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 1108, 'output_tokens': 64, 'total_tokens': 1172, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='1. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n2. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n3. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n', name='search_knowledge_base', id='21a7835b-e157-4de6-8e33-7a3344e853b4', tool_call_id='d74e4f808e7f418d8975499fe16fc3ad'), AIMessage(content='让我搜索更广泛的内容来了解知识库的全貌：\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 66, 'prompt_tokens': 1449, 'total_tokens': 1515, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'ba21b257-b26f-4bd1-9d3a-87c33733acfe', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2f27-a27f-76f3-9284-9eae44c80adc-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': '所有文档 完整列表 知识库概览'}, 'id': '7f03799c4eff41e0bf17fb1b021b32ae', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 1449, 'output_tokens': 66, 'total_tokens': 1515, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='1. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n2. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n3. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n', name='search_knowledge_base', id='67527628-3d40-4311-93d7-e40cee54e19b', tool_call_id='7f03799c4eff41e0bf17fb1b021b32ae'), AIMessage(content='基于搜索结果，我可以看到本地知识库包含以下内容：\n\n## 本地知识库内容概览\n\n### 1. 项目管理指南（Project Management Guidelines）\n- **项目启动阶段**\n  - 利益相关者访谈\n  - 功能性和非功能性需求文档\n  - 用户故事和验收标准创建\n  - 项目范围和边界定义\n\n- **开发流程**\n  - 敏捷方法论相关内容\n\n### 2. FastAPI内部指南（Internal FastAPI Guidelines）\n- **项目结构**\n  - 推荐的目录布局：\n    - `src/` - 源代码\n    - `tests/` - 测试文件\n    - `docs/` - 文档\n    - `scripts/` - 工具脚本\n\n- **编码标准**\n  - 必须遵循PEP 8指南\n  - 使用4个空格缩进\n\n### 知识库特点：\n1. **技术导向**：主要包含软件开发相关的文档\n2. **结构化内容**：使用Markdown格式，有清晰的章节结构\n3. **实践指南**：提供具体的实施指导和建议\n4. **内部标准**：包含团队内部的开发规范和最佳实践\n\n从搜索结果来看，知识库似乎主要包含技术文档和项目管理相关内容，但可能还有其他未显示的文档。如果您想了解特定主题的内容，我可以为您搜索更详细的信息。', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 282, 'prompt_tokens': 1794, 'total_tokens': 2076, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'd88d9006-dbe6-4ab3-a67c-8f8d305ceb22', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2f27-af03-7f20-8ffb-c8a5d3f520bf-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 1794, 'output_tokens': 282, 'total_tokens': 2076, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 19:57:11 | INFO     | __main__:main:32 - =====================================
+2026-03-27 20:06:54 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-27 20:06:58 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 20:06:59 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 20:06:59 | INFO     | src.devmate.agents.agent:_create_agent:24 - Agent 初始化成功
+2026-03-27 20:06:59 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 20:06:59 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 20:06:59 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 20:06:59 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 20:06:59 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 20:06:59 | INFO     | __main__:main:17 - =====================================
+2026-03-27 20:06:59 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 20:06:59 | INFO     | __main__:main:19 - =====================================
+2026-03-27 20:06:59 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 20:06:59 | INFO     | __main__:main:21 - =====================================
+2026-03-27 20:07:05 | INFO     | __main__:main:29 - 用户输入: 你能做什么
+2026-03-27 20:07:15 | INFO     | src.devmate.agents.agent:run:34 - Agent 执行完成: 你能做什么
+2026-03-27 20:07:15 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='你能做什么', additional_kwargs={}, response_metadata={}, id='19bdeb09-a7d6-424e-a6f5-961b7d122faa'), AIMessage(content='我是一个智能开发助手，专门帮助用户构建新服务。我可以为您提供以下帮助：\n\n## 主要能力：\n\n1. **检查网络资源** - 获取最新的技术信息和最佳实践\n2. **检查本地文档** - 了解项目的现有结构和要求\n3. **生成代码文件** - 按照项目规范创建服务文件\n\n## 具体来说，我可以帮您：\n\n### 构建新服务\n- 创建微服务、API服务或完整的应用程序\n- 生成符合项目架构的文件结构\n- 编写高质量的代码，遵循最佳实践\n\n### 技术咨询\n- 获取最新的技术资讯和解决方案\n- 了解不同技术栈的优缺点\n- 推荐适合您项目需求的技术方案\n\n### 代码生成\n- 使用带有文件名的代码块格式生成代码\n- 确保代码符合项目的编码规范\n- 生成配置文件、测试文件等\n\n## 工作流程：\n当您需要构建新服务时，我会：\n1. 首先搜索网络获取最新技术信息\n2. 检查您的项目文档了解现有结构\n3. 根据您的需求生成相应的代码文件\n\n## 示例场景：\n- 创建一个RESTful API服务\n- 构建一个微服务架构\n- 开发一个Web应用程序\n- 设置数据库连接和服务\n- 配置CI/CD流水线\n\n您有什么具体的项目需求吗？比如想构建什么样的服务，或者需要什么类型的技术支持？', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 297, 'prompt_tokens': 540, 'total_tokens': 837, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'f30de348-22f0-409a-9789-7ee3f1bc9bd9', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2f30-e129-73f2-84cd-c110eb256b8c-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 540, 'output_tokens': 297, 'total_tokens': 837, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 20:07:15 | INFO     | __main__:main:32 - =====================================
+2026-03-27 20:07:22 | INFO     | __main__:main:26 - 对话结束
+2026-03-27 20:27:39 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_fastapi_service
+2026-03-27 20:27:39 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_python_project
+2026-03-27 20:27:39 | INFO     | __main__:<module>:48 - ==================================================
+2026-03-27 20:27:39 | INFO     | __main__:<module>:49 - Skills 功能测试
+2026-03-27 20:27:39 | INFO     | __main__:<module>:50 - ==================================================
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:11 - 开始测试 Skills 加载功能
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:14 - 已加载的技能: ['create_fastapi_service', 'create_python_project']
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_fastapi_service
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 FastAPI 服务的基础结构和文件
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 983
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_python_project
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 Python 项目的基础结构和配置文件
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 945
+2026-03-27 20:27:39 | INFO     | __main__:test_skills_loading:27 - 生成的技能提示词长度: 2039
+2026-03-27 20:27:39 | INFO     | __main__:test_agent_with_skills:33 - 开始测试 Agent 与 Skills 集成
+2026-03-27 20:27:43 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 20:27:44 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 20:27:44 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 20:27:44 | INFO     | __main__:test_agent_with_skills:38 - Agent 初始化成功
+2026-03-27 20:27:44 | INFO     | __main__:test_agent_with_skills:39 - Skills 已集成到 Agent 的系统提示词中
+2026-03-27 20:27:44 | INFO     | __main__:<module>:55 - ==================================================
+2026-03-27 20:27:44 | INFO     | __main__:<module>:57 - 所有测试通过
+2026-03-27 20:27:44 | INFO     | __main__:<module>:60 - ==================================================
+2026-03-27 21:00:36 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_fastapi_service
+2026-03-27 21:00:36 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_python_project
+2026-03-27 21:00:36 | INFO     | __main__:<module>:48 - ==================================================
+2026-03-27 21:00:36 | INFO     | __main__:<module>:49 - Skills 功能测试
+2026-03-27 21:00:36 | INFO     | __main__:<module>:50 - ==================================================
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:11 - 开始测试 Skills 加载功能
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:14 - 已加载的技能: ['create_fastapi_service', 'create_python_project']
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_fastapi_service
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 FastAPI 服务的基础结构和文件
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 983
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_python_project
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 Python 项目的基础结构和配置文件
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 945
+2026-03-27 21:00:36 | INFO     | __main__:test_skills_loading:27 - 生成的技能提示词长度: 189
+2026-03-27 21:00:36 | INFO     | __main__:test_agent_with_skills:33 - 开始测试 Agent 与 Skills 集成
+2026-03-27 21:00:40 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 21:00:41 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 21:00:41 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 21:00:41 | INFO     | __main__:test_agent_with_skills:38 - Agent 初始化成功
+2026-03-27 21:00:41 | INFO     | __main__:test_agent_with_skills:39 - Skills 已集成到 Agent 的系统提示词中
+2026-03-27 21:00:41 | INFO     | __main__:<module>:55 - ==================================================
+2026-03-27 21:00:41 | INFO     | __main__:<module>:57 - 所有测试通过
+2026-03-27 21:00:41 | INFO     | __main__:<module>:60 - ==================================================
+2026-03-27 21:19:18 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_fastapi_service
+2026-03-27 21:19:18 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_python_project
+2026-03-27 21:19:18 | INFO     | __main__:<module>:48 - ==================================================
+2026-03-27 21:19:18 | INFO     | __main__:<module>:49 - Skills 功能测试
+2026-03-27 21:19:18 | INFO     | __main__:<module>:50 - ==================================================
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:11 - 开始测试 Skills 加载功能
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:14 - 已加载的技能: ['create_fastapi_service', 'create_python_project']
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_fastapi_service
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 FastAPI 服务的基础结构和文件
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 983
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_python_project
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 Python 项目的基础结构和配置文件
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 945
+2026-03-27 21:19:18 | INFO     | __main__:test_skills_loading:27 - 生成的技能提示词长度: 189
+2026-03-27 21:19:18 | INFO     | __main__:test_agent_with_skills:33 - 开始测试 Agent 与 Skills 集成
+2026-03-27 21:19:22 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 21:19:23 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 21:19:23 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 21:19:23 | INFO     | __main__:test_agent_with_skills:38 - Agent 初始化成功
+2026-03-27 21:19:23 | INFO     | __main__:test_agent_with_skills:39 - Skills 已集成到 Agent 的系统提示词中
+2026-03-27 21:19:23 | INFO     | __main__:<module>:55 - ==================================================
+2026-03-27 21:19:23 | INFO     | __main__:<module>:57 - 所有测试通过
+2026-03-27 21:19:23 | INFO     | __main__:<module>:60 - ==================================================
+2026-03-27 21:20:30 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 21:20:30 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_fastapi_service
+2026-03-27 21:20:30 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_python_project
+2026-03-27 21:20:31 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 21:20:31 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:11 - 开始测试技能匹配逻辑
+2026-03-27 21:20:31 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 21:20:31 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:24 - 测试查询: 我想创建一个 FastAPI 服务
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:56 - 匹配到技能: create_fastapi_service - 创建 FastAPI 服务的基础结构和文件
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:60 - --------------------------------------------------
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:24 - 测试查询: 帮我创建一个 Python 项目
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:56 - 匹配到技能: create_python_project - 创建 Python 项目的基础结构和配置文件
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:60 - --------------------------------------------------
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:24 - 测试查询: 我需要一个 FastAPI 应用
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:56 - 匹配到技能: create_fastapi_service - 创建 FastAPI 服务的基础结构和文件
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:60 - --------------------------------------------------
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:24 - 测试查询: 创建一个新的 Python 项目结构
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:56 - 匹配到技能: create_python_project - 创建 Python 项目的基础结构和配置文件
+2026-03-27 21:20:31 | INFO     | __main__:test_skill_matching:60 - --------------------------------------------------
+2026-03-27 21:34:27 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_fastapi_service
+2026-03-27 21:34:27 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_python_project
+2026-03-27 21:34:27 | INFO     | __main__:<module>:48 - ==================================================
+2026-03-27 21:34:27 | INFO     | __main__:<module>:49 - Skills 功能测试
+2026-03-27 21:34:27 | INFO     | __main__:<module>:50 - ==================================================
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:11 - 开始测试 Skills 加载功能
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:14 - 已加载的技能: ['create_fastapi_service', 'create_python_project']
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_fastapi_service
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 FastAPI 服务的基础结构和文件
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 983
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:22 - 技能名称: create_python_project
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 Python 项目的基础结构和配置文件
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 945
+2026-03-27 21:34:27 | INFO     | __main__:test_skills_loading:27 - 生成的技能提示词长度: 189
+2026-03-27 21:34:27 | INFO     | __main__:test_agent_with_skills:33 - 开始测试 Agent 与 Skills 集成
+2026-03-27 21:34:32 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 21:34:33 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 21:34:33 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 21:34:33 | INFO     | __main__:test_agent_with_skills:38 - Agent 初始化成功
+2026-03-27 21:34:33 | INFO     | __main__:test_agent_with_skills:39 - Skills 已集成到 Agent 的系统提示词中
+2026-03-27 21:34:33 | INFO     | __main__:<module>:55 - ==================================================
+2026-03-27 21:34:33 | INFO     | __main__:<module>:57 - 所有测试通过
+2026-03-27 21:34:33 | INFO     | __main__:<module>:60 - ==================================================
+2026-03-27 21:35:18 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 21:35:18 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_fastapi_service
+2026-03-27 21:35:18 | INFO     | devmate.skills.manager:_load_skills:65 - 加载技能成功: create_python_project
+2026-03-27 21:35:19 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 21:35:19 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 21:35:19 | INFO     | __main__:test_skill_tool:11 - 开始测试技能工具调用
+2026-03-27 21:35:19 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 21:35:19 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 21:35:19 | INFO     | __main__:test_skill_tool:22 - 测试查询: 我想创建一个 FastAPI 服务，请使用相关技能
+2026-03-27 21:35:28 | INFO     | __main__:search_web:83 - 搜索完成: FastAPI 2024 最佳实践 项目结构
+2026-03-27 21:35:28 | INFO     | devmate.mcp.client:search_web:69 - MCP 搜索成功: FastAPI 2024 最佳实践 项目结构
+2026-03-27 21:35:31 | INFO     | __main__:search_web:83 - 搜索完成: FastAPI project structure best practices 2024
+2026-03-27 21:35:31 | INFO     | devmate.mcp.client:search_web:69 - MCP 搜索成功: FastAPI project structure best practices 2024
+2026-03-27 21:35:36 | INFO     | devmate.rag.retriever:search_knowledge_base:72 - 搜索到 3 个相关文档
+2026-03-27 22:42:56 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 22:42:56 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 22:42:56 | INFO     | __main__:<module>:48 - ==================================================
+2026-03-27 22:42:56 | INFO     | __main__:<module>:49 - Skills 功能测试
+2026-03-27 22:42:56 | INFO     | __main__:<module>:50 - ==================================================
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:11 - 开始测试 Skills 加载功能
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:14 - 已加载的技能: ['create-fastapi-service', 'create-python-project']
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:22 - 技能名称: create-fastapi-service
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 FastAPI 服务的基础结构和文件，包括 main.py、requirements.txt 等必要文件
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 1001
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:22 - 技能名称: create-python-project
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 Python 项目的基础结构和配置文件，包括 src/、tests/、docs/ 等目录
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 959
+2026-03-27 22:42:56 | INFO     | __main__:test_skills_loading:27 - 生成的技能提示词长度: 248
+2026-03-27 22:42:56 | INFO     | __main__:test_agent_with_skills:33 - 开始测试 Agent 与 Skills 集成
+2026-03-27 22:43:00 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 22:43:01 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 22:43:01 | INFO     | devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 22:43:01 | INFO     | __main__:test_agent_with_skills:38 - Agent 初始化成功
+2026-03-27 22:43:01 | INFO     | __main__:test_agent_with_skills:39 - Skills 已集成到 Agent 的系统提示词中
+2026-03-27 22:43:01 | INFO     | __main__:<module>:55 - ==================================================
+2026-03-27 22:43:01 | INFO     | __main__:<module>:57 - 所有测试通过
+2026-03-27 22:43:01 | INFO     | __main__:<module>:60 - ==================================================
+2026-03-27 22:48:49 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 22:48:49 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 22:48:50 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 22:48:50 | INFO     | src.devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 22:48:50 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 22:48:50 | ERROR    | src.devmate.rag.retriever:ingest_documents:53 - 文档摄入失败: DirectoryLoader.__init__() got an unexpected keyword argument 'encoding'
+2026-03-27 22:48:50 | ERROR    | __main__:main:34 - 应用程序启动失败: DirectoryLoader.__init__() got an unexpected keyword argument 'encoding'
+2026-03-27 22:49:40 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 22:49:40 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 22:49:40 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 22:49:40 | INFO     | src.devmate.agents.agent:_create_agent:31 - Agent 初始化成功
+2026-03-27 22:49:40 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 22:49:40 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 22:49:40 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 22:49:41 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 22:49:41 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 22:49:41 | INFO     | __main__:main:17 - =====================================
+2026-03-27 22:49:41 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 22:49:41 | INFO     | __main__:main:19 - =====================================
+2026-03-27 22:49:41 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 22:49:41 | INFO     | __main__:main:21 - =====================================
+2026-03-27 22:49:48 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-27 22:49:53 | INFO     | src.devmate.agents.agent:run:41 - Agent 执行完成: 你好
+2026-03-27 22:49:53 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='你好', additional_kwargs={}, response_metadata={}, id='c6a17033-6e9f-4c32-afaa-ebafa9b7aec7'), AIMessage(content='你好！我是你的智能开发助手，很高兴为你服务！我可以帮助你构建新服务、创建项目结构、编写代码等。\n\n我可以：\n1. 搜索网络获取最新的技术信息和最佳实践\n2. 搜索本地知识库了解项目结构和要求\n3. 使用各种专业技能来完成任务\n\n例如，我可以：\n- 创建 FastAPI 服务\n- 创建 Python 项目\n- 创建前端界面设计\n- 处理文档和演示文稿\n- 以及更多其他任务\n\n请告诉我你想要构建什么服务或项目，我会根据你的需求选择最合适的技能来帮助你！', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 123, 'prompt_tokens': 2323, 'total_tokens': 2446, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'edfa3885-71dd-4ef7-bd73-21f4c6c14d67', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2fc5-d803-7563-ba24-95da0d71275c-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 2323, 'output_tokens': 123, 'total_tokens': 2446, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 22:49:53 | INFO     | __main__:main:32 - =====================================
+2026-03-27 22:50:04 | INFO     | __main__:main:29 - 用户输入: 帮我搭建一个前端界面
+2026-03-27 22:50:08 | INFO     | __main__:search_web:83 - 搜索完成: 2024年最新前端开发框架 React Vue 最佳实践
+2026-03-27 22:50:08 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 2024年最新前端开发框架 React Vue 最佳实践
+2026-03-27 22:50:11 | INFO     | __main__:search_web:83 - 搜索完成: React Tailwind CSS 2024 前端项目结构最佳实践
+2026-03-27 22:50:11 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: React Tailwind CSS 2024 前端项目结构最佳实践
+2026-03-27 22:50:15 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 22:50:18 | INFO     | src.devmate.agents.agent:run:41 - Agent 执行完成: 帮我搭建一个前端界面
+2026-03-27 22:50:18 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content='帮我搭建一个前端界面', additional_kwargs={}, response_metadata={}, id='81e6b6ee-6003-4212-9a68-48557635c494'), AIMessage(content='我来帮您搭建一个前端界面。首先，让我搜索一下最新的前端开发最佳实践和技术，然后查看本地是否有相关的项目结构要求', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 84, 'prompt_tokens': 2327, 'total_tokens': 2411, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'a4be24c7-0589-419f-adb3-c7adac3f00eb', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2fc6-18af-7370-a25d-3a335d0fa571-0', tool_calls=[{'name': 'search_web', 'args': {'query': '2024年最新前端开发框架 React Vue 最佳实践'}, 'id': '6994f5e880da4ad287b97faf7cb10ec6', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 2327, 'output_tokens': 84, 'total_tokens': 2411, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='2c586270-a815-413b-9b52-f81f2b7646bf', tool_call_id='6994f5e880da4ad287b97faf7cb10ec6'), AIMessage(content='让我搜索更具体的前端技术信息：\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 65, 'prompt_tokens': 2430, 'total_tokens': 2495, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'd2c3c3cd-1477-49fd-94e6-1fb648168463', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2fc6-2775-7a50-a704-68f7eb0ae3e7-0', tool_calls=[{'name': 'search_web', 'args': {'query': 'React Tailwind CSS 2024 前端项目结构最佳实践'}, 'id': '4752cdfef9cf493a8d02c41caf905664', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 2430, 'output_tokens': 65, 'total_tokens': 2495, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='191f3179-70a1-4b2e-8592-ae1965260a23', tool_call_id='4752cdfef9cf493a8d02c41caf905664'), AIMessage(content='现在让我查看本地是否有相关的项目结构或要求：\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 64, 'prompt_tokens': 2515, 'total_tokens': 2579, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'a54eda9a-fa2a-44ab-9847-d895ffca4406', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2fc6-3399-7a32-ba22-e936b179d2c5-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': '前端项目 界面 结构 要求'}, 'id': 'a20a45b5f538479db328d71a156c4367', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 2515, 'output_tokens': 64, 'total_tokens': 2579, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='1. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n\n2. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n\n3. 来源: docs\\project_management_guidelines.md\n内容: # Project Management Guidelines\n\n## Project Initiation\n\n### Requirements Gathering\n- Conduct stakeholder interviews\n- Document functional and non-functional requirements\n- Create user stories and acceptance criteria\n- Define project scope and boundaries\n\n## Development Process\n\n### Agile Methodology...\n', name='search_knowledge_base', id='00eb857a-170e-4d7b-b769-422bfa77bdbc', tool_call_id='a20a45b5f538479db328d71a156c4367'), AIMessage(content='基于我的知识和最佳实践，我将使用 `frontend-design` 技能来帮您搭建一个高质量的前端界面。这个技能专门用于创建生产级的前端界面，具有高设计质量。\n\n首先让我加载这个技能：\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 62, 'prompt_tokens': 2797, 'total_tokens': 2859, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '3454d339-8544-4914-b2b5-4fae6ed18630', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2fc6-4105-7542-be7a-91db858cce8a-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 2797, 'output_tokens': 62, 'total_tokens': 2859, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 22:50:18 | INFO     | __main__:main:32 - =====================================
+2026-03-27 22:52:51 | INFO     | __main__:main:29 - 用户输入:  创建 FastAPI 服务
+2026-03-27 22:52:58 | INFO     | __main__:search_web:83 - 搜索完成: FastAPI 最佳实践 2024 项目结构 最新
+2026-03-27 22:52:58 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: FastAPI 最佳实践 2024 项目结构 最新
+2026-03-27 22:53:03 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 22:53:06 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 22:55:04 | INFO     | src.devmate.agents.agent:run:41 - Agent 执行完成:  创建 FastAPI 服务
+2026-03-27 22:55:04 | INFO     | __main__:main:31 - DevMate: {'messages': [HumanMessage(content=' 创建 FastAPI 服务', additional_kwargs={}, response_metadata={}, id='01763c93-760a-4642-b3b1-7d4ce2666b8f'), AIMessage(content='我将帮您创建一个 FastAPI 服务。首先让我加载相应的技能来获取最佳实践指导', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 68, 'prompt_tokens': 2328, 'total_tokens': 2396, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '230f6b54-f367-41c0-946f-625cb9d9a6e5', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2fc8-a476-7f91-b550-80ac32b4b7d9-0', tool_calls=[{'name': 'load_skill', 'args': {'skill_name': 'create-fastapi-service'}, 'id': 'a437b3f3d7b14430b69ceac0f13dbf7c', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 2328, 'output_tokens': 68, 'total_tokens': 2396, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='## create-fastapi-service\n创建 FastAPI 服务的基础结构和文件，包括 main.py、requirements.txt 等必要文件\n\n# Create FastAPI Service\n\n当用户要求创建 FastAPI 服务时，请按照以下步骤操作：\n\n## 项目结构\n- 创建 `main.py` 作为应用入口文件\n- 创建 `requirements.txt` 或 `pyproject.toml` 管理依赖\n- 创建 `app/` 目录存放应用代码\n- 创建 `app/__init__.py` 和 `app/main.py`\n\n## 基础代码\n- 在 `main.py` 中创建 FastAPI 实例\n- 定义基本的路由和端点\n- 添加 CORS 中间件（如果需要）\n- 添加健康检查端点\n\n## 依赖管理\n- 在 `requirements.txt` 中包含 `fastapi`, `uvicorn[standard]`\n- 或者使用 `pyproject.toml` 配置项目\n\n## 运行说明\n- 提供启动命令：`uvicorn main:app --reload`\n- 说明如何访问 API 文档：`http://localhost:8000/docs`\n\n## 示例代码\n```python\n# filename: main.py\nfrom fastapi import FastAPI\nfrom fastapi.middleware.cors import CORSMiddleware\n\napp = FastAPI(title="My API", version="1.0.0")\n\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=["*"],\n    allow_credentials=True,\n    allow_methods=["*"],\n    allow_headers=["*"],\n)\n\n@app.get("/")\ndef read_root():\n    return {"message": "Hello World"}\n\n@app.get("/health")\ndef health_check():\n    return {"status": "healthy"}\n```\n\n## Guidelines\n- 确保生成的代码符合 FastAPI 最佳实践\n- 使用类型提示\n- 添加适当的错误处理\n- 包含基本的文档字符串\n', name='load_skill', id='73762863-34d9-44a7-ad52-d1bfcccf1631', tool_call_id='a437b3f3d7b14430b69ceac0f13dbf7c'), AIMessage(content='现在我将创建一个完整的 FastAPI 服务项目结构。让我先搜索一些最新的 FastAPI 最佳实践信息：\n\n', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 79, 'prompt_tokens': 2819, 'total_tokens': 2898, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '5631d54a-780d-44b9-8e90-8d8a819a6814', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2fc8-b041-72f2-8907-c3bb363a10f8-0', tool_calls=[{'name': 'search_web', 'args': {'query': 'FastAPI 最佳实践 2024 项目结构 最新'}, 'id': '37c749c283bc43d4a44156c71e431219', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 2819, 'output_tokens': 79, 'total_tokens': 2898, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='未找到相关信息', name='search_web', id='009880fb-9654-49f3-9f1c-9e97e808900b', tool_call_id='37c749c283bc43d4a44156c71e431219'), AIMessage(content='让我搜索本地知识库，看看是否有现有的项目结构信息', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 66, 'prompt_tokens': 2918, 'total_tokens': 2984, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '874607ad-060d-44f4-8d38-ca3e02d41f38', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2fc8-be25-7fa0-8251-ae0f146c5933-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': 'FastAPI 项目结构 服务架构'}, 'id': '62528c1f093843b1a0b028c7edc19183', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 2918, 'output_tokens': 66, 'total_tokens': 2984, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='1. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n2. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n3. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n', name='search_knowledge_base', id='9bd06416-a8c1-48e4-9d48-02e93edbe9ff', tool_call_id='62528c1f093843b1a0b028c7edc19183'), AIMessage(content='很好！我发现有内部的 FastAPI 指南文档。让我查看更多细节', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 70, 'prompt_tokens': 3291, 'total_tokens': 3361, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': 'a52450ce-a314-43e6-b1f4-a01aefe09bf1', 'finish_reason': 'tool_calls', 'logprobs': None}, id='lc_run--019d2fc8-d1d2-7032-b9c1-a0de96e1df90-0', tool_calls=[{'name': 'search_knowledge_base', 'args': {'query': 'FastAPI 依赖注入 路由 中间件'}, 'id': 'cf961f65367245e18a8d4fb39de1974a', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 3291, 'output_tokens': 70, 'total_tokens': 3361, 'input_token_details': {}, 'output_token_details': {}}), ToolMessage(content='1. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n2. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n\n3. 来源: docs\\internal_fastapi_guidelines.md\n内容: # Internal FastAPI Guidelines\n\n## Project Structure\n\n### Recommended Directory Layout\n- `src/` - Source code\n- `tests/` - Test files\n- `docs/` - Documentation\n- `scripts/` - Utility scripts\n\n## Coding Standards\n\n### PEP 8 Compliance\n- All code must follow PEP 8 guidelines\n- Use 4 spaces for indentat...\n', name='search_knowledge_base', id='f81e8ee0-18d3-421b-81e9-3dce3f083640', tool_call_id='cf961f65367245e18a8d4fb39de1974a'), AIMessage(content='基于技能指导和本地知识库信息，我将创建一个符合最佳实践的 FastAPI 服务项目。让我创建一个完整的项目结构：\n\n## FastAPI 服务项目\n\n我将创建一个结构良好的 FastAPI 服务，包含以下内容：\n\n### 项目结构文件\n\n```bash\n# filename: project_structure.txt\nmy_fastapi_service/\n├── src/\n│   ├── __init__.py\n│   ├── main.py\n│   ├── api/\n│   │   ├── __init__.py\n│   │   ├── routes/\n│   │   │   ├── __init__.py\n│   │   │   ├── health.py\n│   │   │   └── example.py\n│   │   └── dependencies.py\n│   ├── core/\n│   │   ├── __init__.py\n│   │   ├── config.py\n│   │   └── exceptions.py\n│   └── models/\n│       ├── __init__.py\n│       └── schemas.py\n├── tests/\n│   ├── __init__.py\n│   ├── test_health.py\n│   └── test_example.py\n├── docs/\n│   └── README.md\n├── scripts/\n│   └── setup.sh\n├── requirements.txt\n├── pyproject.toml\n├── .env.example\n├── .gitignore\n└── README.md\n```\n\n### 1. 主应用文件\n\n```python\n# filename: src/main.py\n"""\nFastAPI 应用主入口\n"""\nfrom fastapi import FastAPI\nfrom fastapi.middleware.cors import CORSMiddleware\n\nfrom src.api.routes import health, example\nfrom src.core.config import settings\nfrom src.core.exceptions import add_exception_handlers\n\n\ndef create_application() -> FastAPI:\n    """\n    创建 FastAPI 应用实例\n    """\n    app = FastAPI(\n        title=settings.PROJECT_NAME,\n        version=settings.VERSION,\n        description=settings.DESCRIPTION,\n        docs_url="/docs",\n        redoc_url="/redoc",\n        openapi_url="/openapi.json"\n    )\n\n    # 添加 CORS 中间件\n    if settings.BACKEND_CORS_ORIGINS:\n        app.add_middleware(\n            CORSMiddleware,\n            allow_origins=[str(origin) for origin in settings.BACKEND_CORS_ORIGINS],\n            allow_credentials=True,\n            allow_methods=["*"],\n            allow_headers=["*"],\n        )\n\n    # 添加异常处理器\n    add_exception_handlers(app)\n\n    # 注册路由\n    app.include_router(health.router, prefix="/api", tags=["health"])\n    app.include_router(example.router, prefix="/api/v1", tags=["example"])\n\n    return app\n\n\napp = create_application()\n\n\n@app.get("/")\nasync def root():\n    """\n    根端点，提供应用信息\n    """\n    return {\n        "name": settings.PROJECT_NAME,\n        "version": settings.VERSION,\n        "description": settings.DESCRIPTION,\n        "docs": "/docs",\n        "redoc": "/redoc"\n    }\n```\n\n### 2. 配置文件\n\n```python\n# filename: src/core/config.py\n"""\n应用配置设置\n"""\nimport os\nfrom typing import List, Optional, Union\n\nfrom pydantic import AnyHttpUrl, BaseSettings, validator\n\n\nclass Settings(BaseSettings):\n    """\n    应用设置类，从环境变量加载配置\n    """\n    # 基础配置\n    PROJECT_NAME: str = "My FastAPI Service"\n    VERSION: str = "1.0.0"\n    DESCRIPTION: str = "A FastAPI service with best practices"\n    API_V1_STR: str = "/api/v1"\n    \n    # 服务器配置\n    HOST: str = "0.0.0.0"\n    PORT: int = 8000\n    DEBUG: bool = False\n    \n    # CORS 配置\n    BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []\n    \n    @validator("BACKEND_CORS_ORIGINS", pre=True)\n    def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[List[str], str]:\n        if isinstance(v, str) and not v.startswith("["):\n            return [i.strip() for i in v.split(",")]\n        elif isinstance(v, (list, str)):\n            return v\n        raise ValueError(v)\n    \n    # 数据库配置（示例）\n    DATABASE_URL: Optional[str] = None\n    \n    # 安全配置\n    SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key-change-in-production")\n    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30\n    \n    class Config:\n        case_sensitive = True\n        env_file = ".env"\n\n\n# 创建全局设置实例\nsettings = Settings()\n```\n\n### 3. 异常处理\n\n```python\n# filename: src/core/exceptions.py\n"""\n全局异常处理器\n"""\nfrom typing import Any, Dict\n\nfrom fastapi import FastAPI, HTTPException, Request\nfrom fastapi.responses import JSONResponse\nfrom starlette import status\n\n\nclass CustomHTTPException(HTTPException):\n    """自定义 HTTP 异常"""\n    def __init__(\n        self,\n        status_code: int,\n        detail: str = None,\n        headers: Dict[str, Any] = None,\n    ):\n        super().__init__(status_code=status_code, detail=detail, headers=headers)\n\n\nasync def http_exception_handler(request: Request, exc: HTTPException) -> JSONResponse:\n    """HTTP 异常处理器"""\n    return JSONResponse(\n        status_code=exc.status_code,\n        content={\n            "success": False,\n            "error": {\n                "code": exc.status_code,\n                "message": exc.detail,\n                "path": str(request.url.path)\n            }\n        },\n        headers=exc.headers,\n    )\n\n\nasync def validation_exception_handler(request: Request, exc: Exception) -> JSONResponse:\n    """验证异常处理器"""\n    return JSONResponse(\n        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,\n        content={\n            "success": False,\n            "error": {\n                "code": status.HTTP_422_UNPROCESSABLE_ENTITY,\n                "message": str(exc),\n                "path": str(request.url.path)\n            }\n        }\n    )\n\n\nasync def general_exception_handler(request: Request, exc: Exception) -> JSONResponse:\n    """通用异常处理器"""\n    return JSONResponse(\n        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,\n        content={\n            "success": False,\n            "error": {\n                "code": status.HTTP_500_INTERNAL_SERVER_ERROR,\n                "message": "Internal server error",\n                "path": str(request.url.path)\n            }\n        }\n    )\n\n\ndef add_exception_handlers(app: FastAPI) -> None:\n    """向应用添加异常处理器"""\n    app.add_exception_handler(HTTPException, http_exception_handler)\n    app.add_exception_handler(Exception, general_exception_handler)\n```\n\n### 4. 健康检查路由\n\n```python\n# filename: src/api/routes/health.py\n"""\n健康检查路由\n"""\nfrom datetime import datetime\nfrom typing import Dict\n\nfrom fastapi import APIRouter, Depends\nfrom fastapi.responses import JSONResponse\n\nrouter = APIRouter()\n\n\n@router.get("/health", response_model=Dict[str, str])\nasync def health_check() -> Dict[str, str]:\n    """\n    健康检查端点\n    \n    Returns:\n        包含应用状态信息的字典\n    """\n    return {\n        "status": "healthy",\n        "timestamp": datetime.now().isoformat(),\n        "service": "fastapi-service"\n    }\n\n\n@router.get("/health/detailed", response_model=Dict[str, str])\nasync def detailed_health_check() -> Dict[str, str]:\n    """\n    详细健康检查端点\n    \n    Returns:\n        包含详细状态信息的字典\n    """\n    return {\n        "status": "healthy",\n        "timestamp": datetime.now().isoformat(),\n        "service": "fastapi-service",\n        "version": "1.0.0",\n        "uptime": "running"\n    }\n```\n\n### 5. 示例路由\n\n```python\n# filename: src/api/routes/example.py\n"""\n示例路由\n"""\nfrom typing import Dict, List, Optional\n\nfrom fastapi import APIRouter, HTTPException, Query\n\nfrom src.models.schemas import Item, ItemCreate, ItemUpdate\n\nrouter = APIRouter()\n\n# 模拟数据库\nfake_items_db = []\n\n\n@router.get("/items", response_model=List[Item])\nasync def read_items(\n    skip: int = Query(0, ge=0, description="跳过多少条记录"),\n    limit: int = Query(100, ge=1, le=1000, description="返回多少条记录")\n) -> List[Item]:\n    """\n    获取项目列表\n    \n    Args:\n        skip: 跳过的记录数\n        limit: 返回的记录数限制\n    \n    Returns:\n        项目列表\n    """\n    return fake_items_db[skip: skip + limit]\n\n\n@router.get("/items/{item_id}", response_model=Item)\nasync def read_item(item_id: int) -> Item:\n    """\n    根据 ID 获取项目\n    \n    Args:\n        item_id: 项目 ID\n    \n    Returns:\n        项目信息\n    \n    Raises:\n        HTTPException: 项目不存在时抛出 404 错误\n    """\n    for item in fake_items_db:\n        if item.id == item_id:\n            return item\n    raise HTTPException(status_code=404, detail="Item not found")\n\n\n@router.post("/items", response_model=Item, status_code=201)\nasync def create_item(item: ItemCreate) -> Item:\n    """\n    创建新项目\n    \n    Args:\n        item: 要创建的项目数据\n    \n    Returns:\n        创建的项目信息\n    """\n    new_item = Item(\n        id=len(fake_items_db) + 1,\n        **item.dict()\n    )\n    fake_items_db.append(new_item)\n    return new_item\n\n\n@router.put("/items/{item_id}", response_model=Item)\nasync def update_item(item_id: int, item_update: ItemUpdate) -> Item:\n    """\n    更新项目\n    \n    Args:\n        item_id: 项目 ID\n        item_update: 要更新的项目数据\n    \n    Returns:\n        更新后的项目信息\n    \n    Raises:\n        HTTPException: 项目不存在时抛出 404 错误\n    """\n    for idx, item in enumerate(fake_items_db):\n        if item.id == item_id:\n            update_data = item_update.dict(exclude_unset=True)\n            updated_item = item.copy(update=update_data)\n            fake_items_db[idx] = updated_item\n            return updated_item\n    raise HTTPException(status_code=404, detail="Item not found")\n\n\n@router.delete("/items/{item_id}", status_code=204)\nasync def delete_item(item_id: int) -> None:\n    """\n    删除项目\n    \n    Args:\n        item_id: 项目 ID\n    \n    Raises:\n        HTTPException: 项目不存在时抛出 404 错误\n    """\n    for idx, item in enumerate(fake_items_db):\n        if item.id == item_id:\n            fake_items_db.pop(idx)\n            return\n    raise HTTPException(status_code=404, detail="Item not found")\n```\n\n### 6. 数据模型\n\n```python\n# filename: src/models/schemas.py\n"""\nPydantic 数据模型\n"""\nfrom datetime import datetime\nfrom typing import Optional\n\nfrom pydantic import BaseModel, Field\n\n\nclass ItemBase(BaseModel):\n    """项目基础模型"""\n    name: str = Field(..., min_length=1, max_length=100, description="项目名称")\n    description: Optional[str] = Field(None, max_length=500, description="项目描述")\n    price: float = Field(..., ge=0, description="价格")\n\n\nclass ItemCreate(ItemBase):\n    """创建项目模型"""\n    pass\n\n\nclass ItemUpdate(BaseModel):\n    """更新项目模型"""\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=500)\n    price: Optional[float] = Field(None, ge=0)\n\n\nclass Item(ItemBase):\n    """项目模型"""\n    id: int = Field(..., description="项目 ID")\n    created_at: datetime = Field(default_factory=datetime.now, description="创建时间")\n    updated_at: datetime = Field(default_factory=datetime.now, description="更新时间")\n    \n    class Config:\n        orm_mode = True\n        schema_extra = {\n            "example": {\n                "id": 1,\n                "name": "示例项目",\n                "description": "这是一个示例项目",\n                "price": 99.99,\n                "created_at": "2024-01-01T00:00:00",\n                "updated_at": "2024-01-01T00:00:00"\n            }\n        }\n```\n\n### 7. 依赖管理文件\n\n```txt\n# filename: requirements.txt\nfastapi==0.104.1\nuvicorn[standard]==0.24.0\npydantic==2.5.0\npython-dotenv==1.0.0\npytest==7.4.3\nhttpx==0.25.1\n```\n\n### 8. pyproject.toml 配置文件\n\n```toml\n# filename: pyproject.toml\n[project]\nname = "my-fastapi-service"\nversion = "1.0.0"\ndescription = "A FastAPI service with best practices"\nauthors = [\n    {name = "Your Name", email = "your.email@example.com"}\n]\nreadme = "README.md"\nrequires-python = ">=3.8"\ndependencies = [\n    "fastapi>=0.104.0",\n    "uvicorn[standard]>=0.24.0",\n    "pydantic>=2.5.0",\n    "python-dotenv>=1.0.0"\n]\n\n[project.optional-dependencies]\ndev = [\n    "pytest>=7.4.0",\n    "httpx>=0.25.0",\n    "black>=23.0.0",\n    "isort>=5.12.0",\n    "mypy>=1.7.0"\n]\n\n[build-system]\nrequires = ["setuptools>=61.0", "wheel"]\nbuild-backend = "setuptools.build_meta"\n\n[tool.black]\nline-length = 88\ntarget-version = [\'py38\', \'py39\', \'py310\', \'py311\']\n\n[tool.isort]\nprofile = "black"\nmulti_line_output = 3\ninclude_trailing_comma = true\nforce_grid_wrap = 0\nuse_parentheses = true\nensure_newline_before_comments = true\n```\n\n### 9. 环境变量示例文件\n\n```env\n# filename: .env.example\n# 应用配置\nPROJECT_NAME="My FastAPI Service"\nVERSION="1.0.0"\nDESCRIPTION="A FastAPI service with best practices"\n\n# 服务器配置\nHOST="0.0.0.0"\nPORT=8000\nDEBUG=false\n\n# CORS 配置（逗号分隔）\nBACKEND_CORS_ORIGINS="http://localhost:3000,http://localhost:8000"\n\n# 数据库配置\nDATABASE_URL="postgresql://user:password@localhost/dbname"\n\n# 安全配置\nSECRET_KEY="your-secret-key-change-in-production"\nACCESS_TOKEN_EXPIRE_MINUTES=30\n```\n\n### 10. Git 忽略文件\n\n```gitignore\n# filename: .gitignore\n# Python\n__pycache__/\n*.py[cod]\n*$py.class\n*.so\n.Python\nbuild/\ndevelop-eggs/\ndist/\ndownloads/\neggs/\n.eggs/\nlib/\nlib64/\nparts/\nsdist/\nvar/\nwheels/\n*.egg-info/\n.installed.cfg\n*.egg\n\n# Virtual Environment\nvenv/\nenv/\nENV/\n.venv/\n\n# IDE\n.vscode/\n.idea/\n*.swp\n*.swo\n*~\n\n# Environment variables\n.env\n.env.local\n\n# Logs\n*.log\nlogs/\n\n# Testing\n.coverage\nhtmlcov/\n.pytest_cache/\n\n# OS\n.DS_Store\nThumbs.db\n\n# Documentation\ndocs/_build/\n```\n\n### 11. 主 README 文件\n\n```markdown\n# filename: README.md\n# My FastAPI Service\n\n一个基于 FastAPI 构建的现代 Web 服务，遵循最佳实践。\n\n## 特性\n\n- 🚀 使用 FastAPI 构建，高性能\n- 📦 模块化项目结构\n- 🔒 内置 CORS 支持\n- 🛡️ 异常处理和验证\n- 📝 完整的 API 文档\n- 🧪 测试支持\n- ⚙️ 配置管理\n\n## 快速开始\n\n### 前置要求\n\n- Python 3.8+\n- pip 或 poetry\n\n### 安装\n\n1. 克隆项目\n```bash\ngit clone <repository-url>\ncd my_fastapi_service\n```\n\n2. 创建虚拟环境\n```bash\npython -m venv venv\nsource venv/bin/activate  # Linux/Mac\n# 或\nvenv\\Scripts\\activate  # Windows\n```\n\n3. 安装依赖\n```bash\npip install -r requirements.txt\n```\n\n4. 配置环境变量\n```bash\ncp .env.example .env\n# 编辑 .env 文件配置你的设置\n```\n\n### 运行\n\n#### 开发模式\n```bash\nuvicorn src.main:app --reload --host 0.0.0.0 --port 8000\n```\n\n#### 生产模式\n```bash\nuvicorn src.main:app --host 0.0.0.0 --port 8000\n```\n\n### 访问 API 文档\n\n- Swagger UI: http://localhost:8000/docs\n- ReDoc: http://localhost:8000/redoc\n\n## API 端点\n\n### 健康检查\n- `GET /api/health` - 基本健康检查\n- `GET /api/health/detailed` - 详细健康检查\n\n### 示例项目\n- `GET /api/v1/items` - 获取项目列表\n- `GET /api/v1/items/{item_id}` - 获取单个项目\n- `POST /api/v1/items` - 创建项目\n- `PUT /api/v1/items/{item_id}` - 更新项目\n- `DELETE /api/v1/items/{item_id}` - 删除项目\n\n## 项目结构\n\n```\nmy_fastapi_service/\n├── src/                    # 源代码\n│   ├── api/               # API 路由\n│   ├──', additional_kwargs={'refusal': None}, response_metadata={'token_usage': {'completion_tokens': 4096, 'prompt_tokens': 3668, 'total_tokens': 7764, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_provider': 'openai', 'model_name': 'deepseek-v3.2', 'system_fingerprint': None, 'id': '6d070b99-cc97-4cb8-9104-b0a3b14fc1f4', 'finish_reason': 'stop', 'logprobs': None}, id='lc_run--019d2fc8-df60-79d2-9651-4c148d29d35c-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 3668, 'output_tokens': 4096, 'total_tokens': 7764, 'input_token_details': {}, 'output_token_details': {}})]}
+2026-03-27 22:55:04 | INFO     | __main__:main:32 - =====================================
+2026-03-27 23:02:49 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-27 23:19:25 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:19:25 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:19:25 | INFO     | __main__:test_file_tools:17 - 开始测试文件操作工具
+2026-03-27 23:19:25 | INFO     | __main__:test_file_tools:23 - 测试 1: 写入文件
+2026-03-27 23:21:02 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:21:02 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:21:02 | INFO     | __main__:test_file_tools:17 - 开始测试文件操作工具
+2026-03-27 23:21:02 | INFO     | __main__:test_file_tools:23 - 测试 1: 写入文件
+2026-03-27 23:21:03 | INFO     | devmate.tools.tools:write_file:108 - 文件写入成功: test_file_operations/test.txt
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:25 - 结果: 文件写入成功: test_file_operations/test.txt
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:28 - 测试 2: 读取文件
+2026-03-27 23:21:03 | INFO     | devmate.tools.tools:read_file:134 - 文件读取成功: test_file_operations/test.txt
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:30 - 结果: 这是一个测试文件
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:33 - 测试 3: 列出目录
+2026-03-27 23:21:03 | INFO     | devmate.tools.tools:list_directory:168 - 目录列表获取成功: test_file_operations
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:35 - 结果: [FILE] test.txt
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:38 - 测试 4: 搜索文件
+2026-03-27 23:21:03 | INFO     | devmate.tools.tools:search_files:230 - 文件搜索完成: test_file_operations, 模式: \.txt$
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:40 - 结果: test_file_operations\test.txt
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:43 - 测试 5: 删除文件
+2026-03-27 23:21:03 | INFO     | devmate.tools.tools:delete_file:195 - 文件删除成功: test_file_operations/test.txt
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:45 - 结果: 文件删除成功: test_file_operations/test.txt
+2026-03-27 23:21:03 | INFO     | __main__:test_file_tools:47 - 文件操作工具测试完成
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:21:11 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:21:11 | INFO     | __main__:<module>:48 - ==================================================
+2026-03-27 23:21:11 | INFO     | __main__:<module>:49 - Skills 功能测试
+2026-03-27 23:21:11 | INFO     | __main__:<module>:50 - ==================================================
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:11 - 开始测试 Skills 加载功能
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:14 - 已加载的技能: ['algorithmic-art', 'brand-guidelines', 'canvas-design', 'claude-api', 'create-fastapi-service', 'create-python-project', 'doc-coauthoring', 'docx', 'frontend-design', 'internal-comms', 'mcp-builder', 'pdf', 'pptx', 'skill-creator', 'slack-gif-creator', 'theme-factory', 'web-artifacts-builder', 'webapp-testing', 'xlsx']
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: algorithmic-art
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 19327
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: brand-guidelines
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 1914
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: canvas-design
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 11566
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: claude-api
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: "Build apps with the Claude API or Anthropic SDK. TRIGGER when: code imports `anthropic`/`@anthropic-ai/sdk`/`claude_agent_sdk`, or user asks to use Claude API, Anthropic SDKs, or Agent SDK. DO NOT TRIGGER when: code imports `openai`/other AI SDK, general programming, or ML/data-science tasks."
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 19986
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: create-fastapi-service
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 FastAPI 服务的基础结构和文件，包括 main.py、requirements.txt 等必要文件
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 1001
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: create-python-project
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: 创建 Python 项目的基础结构和配置文件，包括 src/、tests/、docs/ 等目录
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 959
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: doc-coauthoring
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 15342
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: docx
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation."
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 19182
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: frontend-design
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 3957
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: internal-comms
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 1099
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: mcp-builder
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 8702
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: pdf
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 7512
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: pptx
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill."
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 8345
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: skill-creator
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 32625
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: slack-gif-creator
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like "make me a GIF of X doing Y for Slack."
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 7528
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: theme-factory
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 2779
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: web-artifacts-builder
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 2695
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: webapp-testing
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 3574
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:22 - 技能名称: xlsx
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:23 - 技能描述: "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved."
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:24 - 技能提示词长度: 10423
+2026-03-27 23:21:11 | INFO     | __main__:test_skills_loading:27 - 生成的技能提示词长度: 7345
+2026-03-27 23:21:11 | INFO     | __main__:test_agent_with_skills:33 - 开始测试 Agent 与 Skills 集成
+2026-03-27 23:21:16 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:21:17 | INFO     | devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 23:21:17 | INFO     | devmate.agents.agent:_create_agent:51 - Agent 初始化成功
+2026-03-27 23:21:17 | INFO     | __main__:test_agent_with_skills:38 - Agent 初始化成功
+2026-03-27 23:21:17 | INFO     | __main__:test_agent_with_skills:39 - Skills 已集成到 Agent 的系统提示词中
+2026-03-27 23:21:17 | INFO     | __main__:<module>:55 - ==================================================
+2026-03-27 23:21:17 | INFO     | __main__:<module>:57 - 所有测试通过
+2026-03-27 23:21:17 | INFO     | __main__:<module>:60 - ==================================================
+2026-03-27 23:32:19 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:32:20 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:36:03 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:36:04 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:36:10 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:36:10 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:39:30 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:39:30 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:39:30 | INFO     | __main__:test_file_tools:17 - 开始测试文件操作工具
+2026-03-27 23:39:30 | INFO     | __main__:test_file_tools:24 - 测试 1: 写入文件
+2026-03-27 23:40:52 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:40:53 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:40:53 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: deepseek-ai/DeepSeek-V3.2
+2026-03-27 23:40:53 | INFO     | src.devmate.agents.agent:_create_agent:49 - Agent 初始化成功
+2026-03-27 23:40:53 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 23:40:53 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 23:40:53 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 23:40:54 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 23:40:54 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 23:40:54 | INFO     | __main__:main:17 - =====================================
+2026-03-27 23:40:54 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 23:40:54 | INFO     | __main__:main:19 - =====================================
+2026-03-27 23:40:54 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 23:40:54 | INFO     | __main__:main:21 - =====================================
+2026-03-27 23:41:33 | INFO     | __main__:main:29 - 用户输入: 帮我查看根目录有什么内容
+2026-03-27 23:42:06 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 23:42:12 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-27 23:43:20 | INFO     | __main__:main:31 - DevMate: 未获取到结果
+2026-03-27 23:43:20 | INFO     | __main__:main:32 - =====================================
+2026-03-27 23:44:10 | INFO     | __main__:main:29 - 用户输入: 帮我看看我磁盘中的根目录有什么内容
+2026-03-27 23:44:51 | INFO     | __main__:search_web:83 - 搜索完成: FastAPI 服务创建最佳实践 2024 Python 3.13
+2026-03-27 23:44:51 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: FastAPI 服务创建最佳实践 2024 Python 3.13
+2026-03-27 23:44:55 | INFO     | __main__:search_web:83 - 搜索完成: Python FastAPI project structure best practices 2024
+2026-03-27 23:44:55 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: Python FastAPI project structure best practices 2024
+2026-03-27 23:47:05 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:47:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:47:06 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: claude-opus-4-6
+2026-03-27 23:47:06 | INFO     | src.devmate.agents.agent:_create_agent:49 - Agent 初始化成功
+2026-03-27 23:47:06 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 23:47:06 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 23:47:06 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 23:47:07 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 23:47:07 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 23:47:07 | INFO     | __main__:main:17 - =====================================
+2026-03-27 23:47:07 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 23:47:07 | INFO     | __main__:main:19 - =====================================
+2026-03-27 23:47:07 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 23:47:07 | INFO     | __main__:main:21 - =====================================
+2026-03-27 23:47:47 | INFO     | __main__:main:29 - 用户输入: 帮我在D:\DevMate\中添加一个test.txt，内容是:hello
+2026-03-27 23:47:49 | ERROR    | src.devmate.agents.agent:run:61 - Agent 运行失败: Error code: 500 - {'error': {'message': 'Request llm server Error: field messages is required (request id: 2026032715475011806606321qAwLN9)', 'type': 'internal_error', 'param': '625462dd-3595-45b7-8554-be2adddabc05', 'code': 'model_server_error'}}
+2026-03-27 23:47:49 | INFO     | __main__:main:31 - DevMate: 运行失败: Error code: 500 - {'error': {'message': 'Request llm server Error: field messages is required (request id: 2026032715475011806606321qAwLN9)', 'type': 'internal_error', 'param': '625462dd-3595-45b7-8554-be2adddabc05', 'code': 'model_server_error'}}
+2026-03-27 23:47:49 | INFO     | __main__:main:32 - =====================================
+2026-03-27 23:48:42 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-27 23:48:48 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:48:48 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:48:49 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-27 23:48:49 | INFO     | src.devmate.agents.agent:_create_agent:49 - Agent 初始化成功
+2026-03-27 23:48:49 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 23:48:49 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 23:48:49 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 23:48:49 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 23:48:49 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 23:48:49 | INFO     | __main__:main:17 - =====================================
+2026-03-27 23:48:49 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 23:48:49 | INFO     | __main__:main:19 - =====================================
+2026-03-27 23:48:49 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 23:48:49 | INFO     | __main__:main:21 - =====================================
+2026-03-27 23:48:55 | INFO     | __main__:main:29 - 用户输入: 我在D:\DevMate\中添加一个test.txt，内容是:hello
+2026-03-27 23:49:09 | INFO     | __main__:main:31 - DevMate: 未获取到结果
+2026-03-27 23:49:09 | INFO     | __main__:main:32 - =====================================
+2026-03-27 23:58:08 | INFO     | __main__:startup_event:47 - Tavily 客户端初始化成功
+2026-03-27 23:58:19 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-27 23:58:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-27 23:58:19 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-27 23:58:20 | INFO     | src.devmate.agents.agent:_create_agent:49 - Agent 初始化成功
+2026-03-27 23:58:20 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-27 23:58:20 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-27 23:58:20 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-27 23:58:20 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-27 23:58:20 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-27 23:58:20 | INFO     | __main__:main:17 - =====================================
+2026-03-27 23:58:20 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-27 23:58:20 | INFO     | __main__:main:19 - =====================================
+2026-03-27 23:58:20 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-27 23:58:20 | INFO     | __main__:main:21 - =====================================
+2026-03-27 23:58:31 | INFO     | __main__:main:29 - 用户输入: 我在D:\DevMate\中添加一个test.txt，内容是:hello
+2026-03-28 00:00:36 | INFO     | __main__:main:31 - DevMate: 未获取到结果
+2026-03-28 00:00:36 | INFO     | __main__:main:32 - =====================================
+2026-03-28 00:01:35 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-28 00:02:24 | INFO     | __main__:search_web:83 - 搜索完成: MCP Python SDK Streamable HTTP server client implementation 2025
+2026-03-28 00:02:24 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: MCP Python SDK Streamable HTTP server client implementation 2025
+2026-03-28 00:02:26 | INFO     | __main__:search_web:83 - 搜索完成: Model Context Protocol MCP Python Streamable HTTP transport langchain-mcp-adapters
+2026-03-28 00:02:26 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: Model Context Protocol MCP Python Streamable HTTP transport langchain-mcp-adapters
+2026-03-28 00:02:29 | INFO     | __main__:search_web:83 - 搜索完成: MCP Streamable HTTP Python SDK 使用教程
+2026-03-28 00:02:29 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: MCP Streamable HTTP Python SDK 使用教程
+2026-03-28 00:02:32 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-28 00:02:59 | INFO     | __main__:search_web:83 - 搜索完成: mcp python sdk streamable http server example 2024 2025
+2026-03-28 00:02:59 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: mcp python sdk streamable http server example 2024 2025
+2026-03-28 00:03:01 | INFO     | __main__:search_web:83 - 搜索完成: langchain-mcp-adapters github
+2026-03-28 00:03:01 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: langchain-mcp-adapters github
+2026-03-28 00:03:03 | INFO     | __main__:search_web:83 - 搜索完成: MCP server python fastapi example
+2026-03-28 00:03:03 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: MCP server python fastapi example
+2026-03-28 00:03:24 | INFO     | __main__:search_web:83 - 搜索完成: "mcp" python sdk "StreamableHttp" server implementation
+2026-03-28 00:03:24 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: "mcp" python sdk "StreamableHttp" server implementation
+2026-03-28 00:03:29 | INFO     | __main__:search_web:83 - 搜索完成: github langchain-mcp-adapters python
+2026-03-28 00:03:29 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: github langchain-mcp-adapters python
+2026-03-28 00:03:33 | INFO     | __main__:search_web:83 - 搜索完成: modelcontextprotocol python server
+2026-03-28 00:03:33 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: modelcontextprotocol python server
+2026-03-28 00:03:36 | INFO     | __main__:search_web:83 - 搜索完成: MCP SDK Python FastAPI
+2026-03-28 00:03:36 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: MCP SDK Python FastAPI
+2026-03-28 00:03:41 | INFO     | __main__:search_web:83 - 搜索完成: modelcontextprotocol.io python server implementation
+2026-03-28 00:03:41 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: modelcontextprotocol.io python server implementation
+2026-03-28 00:03:47 | INFO     | __main__:search_web:83 - 搜索完成: pip install mcp python
+2026-03-28 00:03:47 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: pip install mcp python
+2026-03-28 00:03:49 | INFO     | __main__:search_web:83 - 搜索完成: mcp python server fastapi tavily search
+2026-03-28 00:03:49 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: mcp python server fastapi tavily search
+2026-03-28 00:03:56 | INFO     | __main__:search_web:83 - 搜索完成: python mcp server client tutorial
+2026-03-28 00:03:56 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: python mcp server client tutorial
+2026-03-28 00:04:06 | INFO     | __main__:search_web:83 - 搜索完成: from mcp.server import Server
+2026-03-28 00:04:06 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: from mcp.server import Server
+2026-03-28 00:04:11 | INFO     | __main__:search_web:83 - 搜索完成: "mcp" "StreamableHttp" python example github
+2026-03-28 00:04:11 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: "mcp" "StreamableHttp" python example github
+2026-03-28 00:04:18 | INFO     | __main__:search_web:83 - 搜索完成: pypi mcp python
+2026-03-28 00:04:18 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: pypi mcp python
+2026-03-28 00:04:23 | INFO     | __main__:search_web:83 - 搜索完成: modelcontextprotocol python sdk pypi
+2026-03-28 00:04:23 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: modelcontextprotocol python sdk pypi
+2026-03-28 00:04:32 | INFO     | __main__:search_web:83 - 搜索完成: python mcp server StreamableHttp transport
+2026-03-28 00:04:32 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: python mcp server StreamableHttp transport
+2026-03-28 00:04:35 | INFO     | __main__:search_web:83 - 搜索完成: anthropic mcp python
+2026-03-28 00:04:35 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: anthropic mcp python
+2026-03-28 00:04:43 | INFO     | __main__:search_web:83 - 搜索完成: mcp python server fastapi streamable
+2026-03-28 00:04:43 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: mcp python server fastapi streamable
+2026-03-28 00:04:46 | INFO     | __main__:search_web:83 - 搜索完成: "from mcp.server" python example
+2026-03-28 00:04:46 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: "from mcp.server" python example
+2026-03-28 00:43:09 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 00:43:09 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 00:43:10 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 00:43:10 | INFO     | src.devmate.agents.agent:_create_agent:49 - Agent 初始化成功
+2026-03-28 00:43:10 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-28 00:43:10 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 2 个文档
+2026-03-28 00:43:10 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 2 个片段
+2026-03-28 00:43:10 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-28 00:43:10 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-28 00:43:10 | INFO     | __main__:main:17 - =====================================
+2026-03-28 00:43:10 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-28 00:43:10 | INFO     | __main__:main:19 - =====================================
+2026-03-28 00:43:10 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-28 00:43:10 | INFO     | __main__:main:21 - =====================================
+2026-03-28 00:43:18 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-28 00:43:22 | INFO     | __main__:main:31 - DevMate: 未获取到结果
+2026-03-28 00:43:22 | INFO     | __main__:main:32 - =====================================
+2026-03-28 00:44:06 | INFO     | devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 00:44:06 | INFO     | devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 00:44:06 | INFO     | __main__:test_file_tools:17 - 开始测试文件操作工具
+2026-03-28 00:44:06 | INFO     | __main__:test_file_tools:24 - 测试 1: 写入文件
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:26 - 结果: File written successfully to test_file_operations/test.txt.
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:29 - 测试 2: 读取文件
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:31 - 结果: 这是一个测试文件
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:34 - 测试 3: 列出目录
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:36 - 结果: .env
+.git
+.gitignore
+.python-version
+.skills
+.venv
+checklist.md
+config.toml
+devmate.log
+docker-compose.yml
+Dockerfile
+docs
+main.py
+pyproject.toml
+README.md
+requirements.md
+run.sh
+src
+test_file_operations
+test_file_tools.py
+test_llm_init.py
+test_project.py
+test_retriever.py
+test_skills.py
+test_skill_matching.py
+test_skill_tool.py
+uv.lock
+vector_db
+徒步网站截图.png
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:39 - 测试 4: 删除文件
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:41 - 结果: File deleted successfully: test_file_operations/test.txt.
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:43 - 文件操作工具测试完成
+2026-03-28 00:44:07 | INFO     | __main__:test_file_tools:50 - 测试目录已清理
+2026-03-28 00:44:31 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 00:44:31 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 00:44:32 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 00:44:32 | INFO     | src.devmate.agents.agent:_create_agent:49 - Agent 初始化成功
+2026-03-28 00:44:32 | INFO     | __main__:test_agent:13 - 开始测试 Agent
+2026-03-28 00:44:32 | INFO     | __main__:test_agent:17 - 测试 1: 简单问候
+2026-03-28 00:45:10 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-28 00:52:07 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 00:52:07 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 00:52:08 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 00:52:08 | ERROR    | src.devmate.agents.agent:_create_agent:71 - Agent 初始化失败: 21 validation errors for SystemMessage
+content.str
+  Input should be a valid string [type=string_type, input_value=ChatPromptTemplate(input_...me='agent_scratchpad')]), input_type=ChatPromptTemplate]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].0.str
+  Input should be a valid string [type=string_type, input_value=('name', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].0.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('name', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].1.str
+  Input should be a valid string [type=string_type, input_value=('input_variables', ['agent_scratchpad', 'input']), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].1.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('input_variables', ['agent_scratchpad', 'input']), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].2.str
+  Input should be a valid string [type=string_type, input_value=('optional_variables', ['chat_history']), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].2.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('optional_variables', ['chat_history']), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].3.str
+  Input should be a valid string [type=string_type, input_value=('input_types', {'chat_hi...error_context=None))]]}), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].3.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('input_types', {'chat_hi...error_context=None))]]}), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].4.str
+  Input should be a valid string [type=string_type, input_value=('output_parser', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].4.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('output_parser', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].5.str
+  Input should be a valid string [type=string_type, input_value=('partial_variables', {'chat_history': []}), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].5.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('partial_variables', {'chat_history': []}), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].6.str
+  Input should be a valid string [type=string_type, input_value=('metadata', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].6.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('metadata', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].7.str
+  Input should be a valid string [type=string_type, input_value=('tags', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].7.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('tags', None), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].8.str
+  Input should be a valid string [type=string_type, input_value=('messages', [SystemMessa...me='agent_scratchpad')]), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].8.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('messages', [SystemMessa...me='agent_scratchpad')]), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+content.list[union[str,dict[any,any]]].9.str
+  Input should be a valid string [type=string_type, input_value=('validate_template', False), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+content.list[union[str,dict[any,any]]].9.dict[any,any]
+  Input should be a valid dictionary [type=dict_type, input_value=('validate_template', False), input_type=tuple]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+2026-03-28 00:52:31 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 00:52:32 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 00:52:33 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 00:52:33 | INFO     | src.devmate.agents.agent:_create_agent:58 - Agent 初始化成功
+2026-03-28 00:52:33 | INFO     | __main__:test_agent:13 - 开始测试 Agent
+2026-03-28 00:52:33 | INFO     | __main__:test_agent:17 - 测试 1: 简单问候
+2026-03-28 00:52:39 | INFO     | __main__:test_agent:19 - 结果: 你好！我是智能编程助手，专门帮助你解决各种编程和技术问题。
+
+## 我能做什么
+
+### 编程开发
+- **创建项目结构**：我可以帮你创建 Python 项目、FastAPI 服务等基础架构
+- **编写和修改代码**：支持多种编程语言，包括 Python、JavaScript、TypeScript、React 等
+- **代码调试**：帮助你找出和修复代码中的问题
+
+### 文件操作
+- 读取、创建、编辑和删除文件
+- 浏览目录结构
+- 管理项目文件
+
+### 文档处理
+- 处理 Word 文档（.docx）
+- 创建和编辑 PowerPoint 演示文稿（.pptx）
+- 处理 Excel 表格（.xlsx）
+- 操作 PDF 文件
+
+### 前端开发
+- 创建现代化的网页界面
+- 使用 React、Tailwind CSS、shadcn/ui 等技术栈
+- 设计漂亮的 UI 组件和页面
+
+### 其他能力
+- 搜索网络获取最新技术信息
+- 查询本地知识库
+- 获取天气信息
+- 创建算法艺术
+
+## 使用示例
+
+你可以这样问我：
+
+- "帮我创建一个 Python 项目结构"
+- "创建一个 FastAPI 服务"
+- "帮我写一个计算器页面"
+- "读取这个 Excel 文件并分析数据"
+- "帮我制作一个 PPT"
+
+有什么我可以帮助你的吗？
+2026-03-28 00:52:39 | INFO     | __main__:test_agent:22 - 测试 2: 文件操作
+2026-03-28 00:52:42 | INFO     | __main__:test_agent:24 - 结果: 已成功创建 `test.txt` 文件，内容为 "Hello World"。
+2026-03-28 00:52:42 | INFO     | __main__:test_agent:27 - 测试 3: 技能加载
+2026-03-28 00:52:50 | ERROR    | src.devmate.agents.agent:run:82 - Agent 运行失败: 'gbk' codec can't encode character '\u2705' in position 96: illegal multibyte sequence
+2026-03-28 00:52:50 | INFO     | __main__:test_agent:29 - 结果: 运行失败: 'gbk' codec can't encode character '\u2705' in position 96: illegal multibyte sequence
+2026-03-28 00:52:50 | INFO     | __main__:test_agent:31 - Agent 测试完成
+2026-03-28 00:53:14 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 00:53:14 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 00:53:15 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 00:53:15 | INFO     | src.devmate.agents.agent:_create_agent:58 - Agent 初始化成功
+2026-03-28 00:53:15 | INFO     | __main__:test_agent:18 - 开始测试 Agent
+2026-03-28 00:53:15 | INFO     | __main__:test_agent:22 - 测试 1: 简单问候
+2026-03-28 00:53:20 | INFO     | __main__:test_agent:24 - 结果: 你好！我是 **智能编程助手**，一个专门帮助你解决编程和技术问题的 AI 助手。
+
+## 我能做什么
+
+🛠️ **代码开发**
+
+- 编写、调试和优化代码
+- 创建完整的应用程序（Web 应用、Python 项目、API 服务等）
+- 代码审查和重构建议
+
+📁 **文件操作**
+
+- 读取、创建、编辑和删除文件
+- 浏览项目目录结构
+- 管理项目文件
+
+🔍 **信息检索**
+
+- 搜索网络获取最新技术文档和最佳实践
+- 查询本地知识库
+- 技术问题解答
+
+🎨 **专业技能**
+
+- 创建 Word 文档（.docx）
+- 创建 PowerPoint 演示文稿（.pptx）
+- 处理 Excel 表格（.xlsx）
+- 创建 PDF 文档
+- 前端界面设计与开发
+- 算法艺术创作
+
+## 如何使用我
+
+你可以：
+
+- 直接描述你想要实现的功能或解决的问题
+- 让我帮你创建项目结构或编写代码
+- 询问任何编程或技术相关的问题
+- 让我帮你处理各种文件格式
+
+请告诉我你需要什么帮助？😊
+2026-03-28 00:53:20 | INFO     | __main__:test_agent:27 - 测试 2: 文件操作
+2026-03-28 00:53:25 | INFO     | __main__:test_agent:29 - 结果: 已成功创建测试文件 `test.txt`，内容为 `Hello World`。
+2026-03-28 00:53:25 | INFO     | __main__:test_agent:32 - 测试 3: 技能加载
+2026-03-28 00:53:32 | INFO     | __main__:test_agent:34 - 结果: 已成功加载 **create-python-project** 技能！
+
+## 技能概述
+
+该技能提供了创建 Python 项目基础结构的完整指南，包括：
+
+### 📁 项目结构
+- `src/` - 存放源代码
+- `tests/` - 存放测试代码
+- `docs/` - 存放文档
+- `.gitignore` - Git 忽略文件
+
+### ⚙️ 配置文件
+- `pyproject.toml` - 管理项目配置和依赖
+- `README.md` - 项目说明文档
+- `.env.example` - 环境变量模板
+
+### 📦 依赖管理
+- 核心依赖
+- 开发依赖：`pytest`, `black`, `flake8`, `mypy`
+
+### ✅ 最佳实践
+- 符合 PEP 8 规范
+- 使用类型提示
+- 添加适当的文档字符串
+- 包含基本的错误处理
+
+---
+
+如果您想创建 Python 项目，请告诉我项目名称和描述，我将帮您生成完整的项目结构！
+2026-03-28 00:53:32 | INFO     | __main__:test_agent:36 - Agent 测试完成
+2026-03-28 00:54:04 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 00:54:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 00:54:05 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 00:54:05 | INFO     | src.devmate.agents.agent:_create_agent:58 - Agent 初始化成功
+2026-03-28 00:54:05 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-28 00:54:05 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 3 个文档
+2026-03-28 00:54:05 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 3 个片段
+2026-03-28 00:54:06 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-28 00:54:06 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-28 00:54:06 | INFO     | __main__:main:17 - =====================================
+2026-03-28 00:54:06 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-28 00:54:06 | INFO     | __main__:main:19 - =====================================
+2026-03-28 00:54:06 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-28 00:54:06 | INFO     | __main__:main:21 - =====================================
+2026-03-28 00:54:07 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-28 00:54:10 | INFO     | __main__:main:31 - DevMate: 你好！有什么我可以帮助你的吗？
+
+我可以帮助你完成各种编程任务，比如：
+
+- 📁 **文件操作** - 读取、创建、编辑文件和目录
+- 🐍 **Python 项目** - 创建项目结构、编写代码
+- 🌐 **Web 开发** - 创建 FastAPI 服务、前端页面
+- 📄 **文档处理** - 处理 Word、Excel、PDF 等文件
+- 🎨 **设计工作** - 创建幻灯片、Canvas 艺术作品
+- 🔍 **信息查询** - 搜索网络或本地知识库
+
+请告诉我你需要什么帮助！
+2026-03-28 00:54:11 | INFO     | __main__:main:32 - =====================================
+2026-03-28 00:54:47 | INFO     | __main__:main:29 - 用户输入: 帮我在D:\DevMate中创建一个test.txt，里面内容是“hello"
+2026-03-28 00:54:56 | INFO     | __main__:main:31 - DevMate: 已完成！文件 `D:\DevMate\test.txt` 已成功创建，内容为：
+
+```
+hello
+```
+2026-03-28 00:54:56 | INFO     | __main__:main:32 - =====================================
+2026-03-28 01:08:33 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 01:08:33 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 01:08:34 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 01:08:34 | INFO     | src.devmate.agents.agent:_create_agent:58 - Agent 初始化成功
+2026-03-28 01:08:34 | INFO     | __main__:test_agent:18 - 开始测试 Agent
+2026-03-28 01:08:34 | INFO     | __main__:test_agent:22 - 测试 1: 简单问候
+2026-03-28 01:08:39 | INFO     | __main__:test_agent:24 - 结果: 你好！我是 Claude，一个智能编程助手。
+
+我可以帮助你完成各种任务，包括：
+
+**编程与开发**
+
+- 编写、调试和优化代码（Python、JavaScript、React 等）
+- 创建项目结构和配置文件
+- 构建 FastAPI 服务
+- 创建 Python 项目模板
+
+**文件操作**
+
+- 读取、写入、编辑各种文件
+- 创建和管理目录结构
+- 删除文件
+
+**文档处理**
+
+- 创建和编辑 Word 文档 (.docx)
+- 创建 PowerPoint 演示文稿 (.pptx)
+- 处理 PDF 文件（读取、合并、分割等）
+- 创建和编辑 Excel 表格 (.xlsx)
+
+**设计与创意**
+
+- 创建前端界面和网页
+- 设计海报、演示文稿等视觉作品
+- 创建算法艺术
+
+**其他工具**
+
+- 搜索网络获取最新信息
+- 搜索本地知识库
+- 获取城市天气信息
+
+如果你有任何需要，请随时告诉我！我会尽力帮助你完成任务。😊
+2026-03-28 01:08:39 | INFO     | __main__:test_agent:27 - 测试 2: 文件操作
+2026-03-28 01:08:42 | INFO     | __main__:test_agent:29 - 结果: 已成功创建 `test.txt` 文件，内容为 `Hello World`。
+2026-03-28 01:08:42 | INFO     | __main__:test_agent:32 - 测试 3: 技能加载
+2026-03-28 01:08:51 | INFO     | __main__:test_agent:34 - 结果: 已成功加载 **create-python-project** 技能！
+
+## 技能概述
+
+这个技能可以帮助你创建一个规范化的 Python 项目，包括：
+
+### 📁 项目结构
+- `src/` - 源代码目录
+- `tests/` - 测试代码目录
+- `docs/` - 文档目录
+
+### ⚙️ 配置文件
+- `pyproject.toml` - 项目配置和依赖管理
+- `README.md` - 项目说明文档
+- `.gitignore` - Git 忽略文件
+- `.env.example` - 环境变量模板
+
+### 📦 依赖管理
+技能会自动配置以下开发依赖：
+- **pytest** - 测试框架
+- **black** - 代码格式化
+- **flake8** - 代码检查
+- **mypy** - 类型检查
+
+### ✅ 最佳实践
+- 符合 PEP 8 规范
+- 使用类型提示
+- 添加文档字符串
+- 包含基本错误处理
+
+---
+
+现在你可以告诉我你想要创建的项目名称和描述，我会帮你生成完整的 Python 项目结构！
+2026-03-28 01:08:51 | INFO     | __main__:test_agent:36 - Agent 测试完成
+2026-03-28 01:09:46 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-28 01:09:50 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 01:09:50 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 01:09:51 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 01:09:51 | INFO     | src.devmate.agents.agent:_create_agent:58 - Agent 初始化成功
+2026-03-28 01:09:51 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-28 01:09:51 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 3 个文档
+2026-03-28 01:09:51 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 3 个片段
+2026-03-28 01:09:51 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-28 01:09:51 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-28 01:09:51 | INFO     | __main__:main:17 - =====================================
+2026-03-28 01:09:51 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-28 01:09:51 | INFO     | __main__:main:19 - =====================================
+2026-03-28 01:09:51 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-28 01:09:51 | INFO     | __main__:main:21 - =====================================
+2026-03-28 01:09:57 | INFO     | __main__:main:29 - 用户输入: 你好
+2026-03-28 01:09:59 | INFO     | __main__:main:31 - DevMate: 你好！有什么我可以帮助你的吗？
+
+我可以帮助你完成各种编程任务，比如：
+
+- 📁 查看和操作文件
+- 🐍 创建和编写 Python 项目
+- 🌐 创建 Web 应用和前端界面
+- 📄 处理 Word、Excel、PDF 等文档
+- 📊 创建演示文稿（PPT）
+- 🔍 搜索网络获取最新技术信息
+- 💡 解答编程问题和提供指导
+
+请告诉我你需要什么帮助！
+2026-03-28 01:09:59 | INFO     | __main__:main:32 - =====================================
+2026-03-28 01:10:09 | INFO     | __main__:main:29 - 用户输入: 今天广州天气怎么用
+2026-03-28 01:10:14 | INFO     | __main__:main:31 - DevMate: 今天广州的天气是**晴天**☀️！
+
+关于天气查询功能的使用方法很简单：
+
+- 你可以直接问我"今天北京天气怎么样"、"上海天气如何"等，我就能帮你查询对应城市的天气情况。
+
+需要查询其他城市吗？
+2026-03-28 01:10:14 | INFO     | __main__:main:32 - =====================================
+2026-03-28 01:10:32 | INFO     | __main__:main:29 - 用户输入: 张雪峰是谁
+2026-03-28 01:10:35 | INFO     | __main__:main:31 - DevMate: 张雪峰（本名张子彪）是一位中国知名的考研指导老师和网络红人。
+
+他主要因为在网络上发布考研指导视频而走红，以幽默风趣、见解犀利的讲解风格受到广泛关注。张雪峰擅长分析考研形势、专业选择院校规划等内容，在各大视频平台拥有大量粉丝。
+
+他曾任职于多家考研培训机构，现在是独立的教育博主，继续从事考研咨询和指导工作。
+
+需要注意的是，网络上可能存在一些冒充张雪峰的账号，如果您需要获取相关信息，建议通过官方渠道确认。
+2026-03-28 01:10:35 | INFO     | __main__:main:32 - =====================================
+2026-03-28 01:10:47 | INFO     | __main__:main:29 - 用户输入: 他享年多少岁
+2026-03-28 01:10:50 | INFO     | __main__:main:31 - DevMate: 您好！您的问题"他享年多少岁"缺少了一些上下文信息。
+
+请问您想了解的是谁的情况？比如：
+
+- 某个历史人物？
+- 某个公众人物？
+- 某个您提到的具体人物？
+
+如果您能提供更多背景信息，我就能更好地帮助您了。
+2026-03-28 01:10:50 | INFO     | __main__:main:32 - =====================================
+2026-03-28 01:11:09 | INFO     | __main__:main:29 - 用户输入: 郭骏东是谁
+2026-03-28 01:11:11 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-28 01:11:13 | INFO     | __main__:search_web:83 - 搜索完成: 郭骏东
+2026-03-28 01:11:13 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 郭骏东
+2026-03-28 01:11:16 | INFO     | __main__:main:31 - DevMate: 抱歉，我在本地知识库和网络搜索中都没有找到关于"郭骏东"的相关信息。
+
+这个人可能是：
+
+- 您认识的人（不在公开资料中）
+- 某个特定领域或圈子中的人物
+- 名字可能有不同的拼写方式
+
+您能提供更多背景信息吗？比如：
+- 您是在哪里听说这个人的？
+- 他/她从事什么职业？
+- 有什么其他特征可以帮助识别？
+
+这样我可以更有针对性地帮您查找信息。
+2026-03-28 01:11:16 | INFO     | __main__:main:32 - =====================================
+2026-03-28 19:18:19 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 19:18:19 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 19:18:20 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 19:18:20 | INFO     | src.devmate.agents.agent:_create_agent:64 - Agent 初始化成功
+2026-03-28 19:18:20 | INFO     | __main__:test_agent:18 - 开始测试 Agent
+2026-03-28 19:18:20 | INFO     | __main__:test_agent:22 - 测试 1: 简单问候
+2026-03-28 19:18:24 | INFO     | __main__:test_agent:24 - 结果: 你好！我是 Claude，一个智能编程助手。
+
+我可以帮助你完成各种任务，包括：
+
+**编程开发：**
+
+- 创建和编写代码（Python、JavaScript、HTML/CSS 等）
+- 构建 FastAPI 服务
+- 创建 Python 项目结构
+- 调试和修复代码问题
+
+**文件操作：**
+
+- 读取、创建、编辑文件
+- 管理项目目录结构
+- 处理文档（Word、Excel、PDF、PowerPoint 等）
+
+**设计创作：**
+
+- 创建前端界面和网页
+- 设计视觉艺术作品
+- 生成 PPT 演示文稿
+
+**信息检索：**
+
+- 搜索网络获取最新技术信息
+- 查询本地知识库
+
+**文档协作：**
+
+- 编写技术文档、提案、规格说明等
+
+有什么我可以帮助你的吗？😊
+2026-03-28 19:18:24 | INFO     | __main__:test_agent:27 - 测试 2: 文件操作
+2026-03-28 19:18:30 | INFO     | __main__:test_agent:29 - 结果: 已完成！`test.txt` 文件已创建，内容为：
+
+```
+Hello World
+```
+
+还有其他需要帮助的吗？
+2026-03-28 19:18:30 | INFO     | __main__:test_agent:32 - 测试 3: 技能加载
+2026-03-28 19:18:37 | INFO     | __main__:test_agent:34 - 结果: `create-python-project` 技能已加载成功！✅
+
+## 技能说明
+
+这个技能可以帮助你创建一个标准化的 Python 项目结构，包括：
+
+### 📁 项目结构
+- `src/` - 源代码目录
+- `tests/` - 测试代码目录
+- `docs/` - 文档目录
+- `.gitignore` - Git 忽略文件
+
+### ⚙️ 配置文件
+- `pyproject.toml` - 项目配置和依赖管理
+- `README.md` - 项目说明文档
+- `.env.example` - 环境变量模板
+
+### 🛠️ 包含的开发依赖
+- `pytest` - 测试框架
+- `black` - 代码格式化
+- `flake8` - 代码检查
+- `mypy` - 类型检查
+
+---
+
+如果你想创建一个 Python 项目，请告诉我项目名称，我可以帮你生成完整的项目结构！
+2026-03-28 19:18:37 | INFO     | __main__:test_agent:36 - Agent 测试完成
+2026-03-28 19:19:05 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 19:19:05 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 19:19:05 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 19:19:05 | INFO     | src.devmate.agents.agent:_create_agent:64 - Agent 初始化成功
+2026-03-28 19:19:05 | INFO     | __main__:test_memory:18 - 开始测试 Agent 记忆功能
+2026-03-28 19:19:05 | INFO     | __main__:test_memory:25 - === 第一次对话 ===
+2026-03-28 19:19:09 | INFO     | __main__:test_memory:27 - 结果: 你好，张三！👋
+
+很高兴认识你！我是一个智能编程助手，可以帮助你完成各种任务，比如：
+
+- 📝 **编写代码** - 创建、调试、优化代码
+- 🛠️ **构建项目** - 创建 Python 项目、FastAPI 服务等
+- 📄 **处理文件** - 读取、创建、编辑文档（Word、Excel、PDF 等）
+- 🎨 **设计界面** - 创建网页、前端组件、视觉设计
+- 🔍 **搜索信息** - 查找网络资源或本地知识库
+
+请问有什么我可以帮助你的吗？
+2026-03-28 19:19:09 | INFO     | __main__:test_memory:30 - === 第二次对话 ===
+2026-03-28 19:19:11 | INFO     | __main__:test_memory:32 - 结果: 你叫 **张三**！😊
+
+这是你刚才告诉我的。有什么需要我帮忙的吗？
+2026-03-28 19:19:11 | INFO     | __main__:test_memory:35 - === 第三次对话 ===
+2026-03-28 19:19:12 | INFO     | __main__:test_memory:37 - 结果: 你刚才第一句话说的是：**"我叫张三"** 👍
+2026-03-28 19:19:12 | INFO     | __main__:test_memory:39 - Agent 记忆功能测试完成
+2026-03-28 19:43:45 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 19:43:45 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 19:43:46 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 19:43:46 | INFO     | src.devmate.agents.agent:_create_agent:64 - Agent 初始化成功
+2026-03-28 19:43:46 | INFO     | __main__:test_memory:18 - 开始测试 Agent 记忆功能
+2026-03-28 19:43:46 | INFO     | __main__:test_memory:25 - === 第一次对话 ===
+2026-03-28 19:43:49 | INFO     | __main__:test_memory:27 - 结果: 你好，张三！很高兴认识你。
+
+我是智能编程助手，可以帮助你完成各种任务，比如：
+
+- 📝 编写和修改代码
+- 🔍 搜索网络获取最新信息
+- 📁 管理文件和项目
+- 📄 创建和处理文档（如 Word、Excel、PDF 等）
+- 🎨 设计网页和艺术作品
+
+请问有什么我可以帮助你的吗？
+2026-03-28 19:43:49 | INFO     | __main__:test_memory:30 - === 第二次对话 ===
+2026-03-28 19:43:51 | INFO     | __main__:test_memory:32 - 结果: 你叫**张三**！这是你刚才告诉我的。😊
+
+有什么我可以帮你的吗？
+2026-03-28 19:43:51 | INFO     | __main__:test_memory:35 - === 第三次对话 ===
+2026-03-28 19:43:53 | INFO     | __main__:test_memory:37 - 结果: 你刚才第一句话说的是：**"我叫张三"** 📌
+2026-03-28 19:43:53 | INFO     | __main__:test_memory:39 - Agent 记忆功能测试完成
+2026-03-28 19:45:44 | INFO     | __main__:startup_event:47 - Tavily 客户端初始化成功
+2026-03-28 19:46:08 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 19:46:08 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 19:46:10 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 19:46:10 | INFO     | src.devmate.agents.agent:_create_agent:64 - Agent 初始化成功
+2026-03-28 19:46:10 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-28 19:46:10 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 3 个文档
+2026-03-28 19:46:10 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 3 个片段
+2026-03-28 19:46:11 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-28 19:46:11 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-28 19:46:11 | INFO     | __main__:main:17 - =====================================
+2026-03-28 19:46:11 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-28 19:46:11 | INFO     | __main__:main:19 - =====================================
+2026-03-28 19:46:11 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-28 19:46:11 | INFO     | __main__:main:21 - =====================================
+2026-03-28 19:46:21 | INFO     | __main__:main:29 - 用户输入: 你好，我叫冲天
+2026-03-28 19:46:24 | INFO     | __main__:main:31 - DevMate: 你好，冲天！很高兴认识你！👋
+
+我是一个智能编程助手，可以帮助你完成各种任务，比如：
+
+- 📝 编写和修改代码
+- 🔍 搜索网络获取最新技术信息
+- 📁 管理文件和项目结构
+- 🛠️ 创建各种项目（Python、FastAPI 等）
+- 📄 处理文档（Word、Excel、PDF 等）
+- 🎨 创建前端界面和设计
+
+有什么我可以帮你的吗？
+2026-03-28 19:46:24 | INFO     | __main__:main:32 - =====================================
+2026-03-28 19:46:35 | INFO     | __main__:main:29 - 用户输入: 我刚刚说我叫什么
+2026-03-28 19:46:37 | INFO     | __main__:main:31 - DevMate: 哦，不好意思！我明白了 —— 你叫**冲天**！😊
+
+有什么我可以帮你的吗，冲天？
+2026-03-28 19:46:37 | INFO     | __main__:main:32 - =====================================
+2026-03-28 19:53:43 | INFO     | __main__:main:29 - 用户输入: 在我的"D:\DevMate\test_dir"构建一个python FastApi项目
+2026-03-28 19:54:03 | INFO     | __main__:main:31 - DevMate: 完成！我已经在 `D:\DevMate\test_dir` 目录下创建了一个 FastAPI 项目，项目结构如下：
+
+```
+D:\DevMate\test_dir
+├── main.py              # 应用入口
+├── requirements.txt     # 依赖文件
+└── app/
+    └── __init__.py      # 应用代码
+```
+
+## 启动方式
+
+1. **安装依赖**：
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **启动服务**：
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+3. **访问 API 文档**：
+   - Swagger UI: http://localhost:8000/docs
+   - ReDoc: http://localhost:8000/redoc
+
+## 包含的端点
+
+| 端点 | 方法 | 描述 |
+|------|------|------|
+| `/` | GET | 根端点 |
+| `/health` | GET | 健康检查 |
+| `/api/v1/hello` | GET | Hello API |
+| `/api/v1/items/{item_id}` | GET | 获取项目 |
+
+冲天，还需要我添加其他功能或调整项目结构吗？
+2026-03-28 19:54:03 | INFO     | __main__:main:32 - =====================================
+2026-03-28 19:55:49 | INFO     | __main__:main:29 - 用户输入: 内容再丰富	一些，添加一些基础api
+2026-03-28 19:57:08 | INFO     | __main__:main:31 - DevMate: 完成！冲天，我已经为你创建了一个内容丰富的 FastAPI 项目，项目结构如下：
+
+```
+D:\DevMate\test_dir
+├── main.py                 # 应用入口（带中间件和错误处理）
+├── requirements.txt        # 依赖文件
+├── .env.example           # 环境变量示例
+└── app/
+    ├── __init__.py        # 路由汇总
+    ├── models/
+    │   └── __init__.py    # 数据模型（Pydantic）
+    └── routes/
+        ├── __init__.py
+        ├── users.py       # 用户管理 API
+        ├── items.py       # 物品管理 API
+        └── utils.py       # 工具 API
+```
+
+## 📡 API 端点汇总
+
+### 用户管理 `/api/v1/users`
+| 方法 | 端点 | 描述 |
+|------|------|------|
+| GET | `/` | 获取用户列表 |
+| GET | `/{user_id}` | 获取单个用户 |
+| POST | `/` | 创建用户 |
+| PUT | `/{user_id}` | 更新用户 |
+| DELETE | `/{user_id}` | 删除用户 |
+| POST | `/{user_id}/activate` | 激活用户 |
+| POST | `/{user_id}/deactivate` | 停用用户 |
+
+### 物品管理 `/api/v1/items`
+| 方法 | 端点 | 描述 |
+|------|------|------|
+| GET | `/` | 获取物品列表（支持过滤） |
+| GET | `/{item_id}` | 获取单个物品 |
+| POST | `/` | 创建物品 |
+| PUT | `/{item_id}` | 更新物品 |
+| DELETE | `/{item_id}` | 删除物品 |
+| GET | `/search/` | 搜索物品 |
+| GET | `/owner/{owner_id}` | 获取用户的物品 |
+
+### 工具 `/api/v1/utils`
+| 方法 | 端点 | 描述 |
+|------|------|------|
+| GET | `/time` | 获取当前时间 |
+| GET | `/uuid` | 生成 UUID |
+| GET | `/random` | 生成随机字符串 |
+| GET | `/random-number` | 生成随机数字 |
+| POST | `/echo` | 回显数据 |
+| GET | `/ping` | Ping 服务 |
+| GET | `/info` | 服务信息 |
+
+## 🚀 启动方式
+
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 启动服务
+uvicorn main:app --reload
+```
+
+访问 http://localhost:8000/docs 查看完整的 API 文档！
+
+冲天，还需要添加其他功能吗？比如数据库集成、认证授权等？
+2026-03-28 19:57:08 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:08:07 | INFO     | __main__:main:29 - 用户输入: 知识库中有什么知识
+2026-03-28 20:08:12 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-28 20:08:15 | INFO     | src.devmate.rag.retriever:search_knowledge_base:71 - 搜索到 3 个相关文档
+2026-03-28 20:08:21 | INFO     | __main__:main:31 - DevMate: 根据搜索结果，知识库中主要有以下内容：
+
+## 📚 知识库内容
+
+### 1. 项目文档 (`docs\index.md`)
+- 欢迎页面
+- 入门指南（参见 `README.md`）
+- 项目结构说明：
+  - `src/` - 源代码
+  - `tests/` - 测试文件
+  - `docs/` - 文档
+
+### 2. FastAPI 内部指南 (`docs\internal_fastapi_guidelines.md`)
+- **项目结构**：推荐目录布局
+  - `src/` - 源代码
+  - `tests/` - 测试文件
+  - `docs/` - 文档
+  - `scripts/` - 工具脚本
+
+- **编码标准**：
+  - 遵循 PEP 8 规范
+  - 使用 4 空格缩进
+  - ...（后续内容被截断）
+
+---
+
+知识库的内容比较基础，主要是项目文档和 FastAPI 开发规范。
+
+冲天，你的项目目前是直接放在 `D:\DevMate\test_dir` 根目录下的。如果你想按照知识库中的规范来组织，可以改成：
+
+```
+D:\DevMate\test_dir
+├── src/
+│   ├── app/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   └── __init__.py
+│   └── main.py
+├── tests/
+├── docs/
+├── requirements.txt
+└── .env.example
+```
+
+需要我按这个结构重构项目吗？
+2026-03-28 20:08:21 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:10:37 | INFO     | __main__:main:29 - 用户输入: 对
+2026-03-28 20:12:44 | INFO     | __main__:main:31 - DevMate: 完成！冲天，项目已经按知识库的规范重构好了。最终结构如下：
+
+```
+D:\DevMate\test_dir
+├── src/                      # 源代码
+│   ├── main.py              # 应用入口
+│   └── app/
+│       ├── __init__.py      # 路由汇总
+│       ├── models/
+│       │   └── __init__.py  # 数据模型
+│       └── routes/
+│           ├── __init__.py
+│           ├── users.py     # 用户管理 API
+│           ├── items.py     # 物品管理 API
+│           └── utils.py     # 工具 API
+├── tests/                    # 测试文件
+│   └── __init__.py
+├── docs/                     # 文档
+│   └── index.md
+├── scripts/                  # 工具脚本
+│   └── __init__.py
+├── requirements.txt          # 依赖
+└── .env.example             # 环境变量示例
+```
+
+## 🚀 启动方式
+
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 启动服务（使用 src.main:app）
+uvicorn src.main:app --reload
+
+# 或者直接运行
+python src/main.py
+```
+
+访问 http://localhost:8000/docs 查看 API 文档！
+
+旧目录 `app/` 由于 Windows 限制无法自动删除，如果你需要清理可以用资源管理器手动删除 `D:\DevMate\test_dir\app` 文件夹。
+
+还有其他需要调整的吗？
+2026-03-28 20:12:44 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:13:34 | INFO     | __main__:main:29 - 用户输入: 你知道暨南大学吗
+2026-03-28 20:13:41 | INFO     | __main__:main:31 - DevMate: 知道！暨南大学（Jinan University）是中国一所很有名的大学：
+
+## 🎓 暨南大学简介
+
+| 项目 | 信息 |
+|------|------|
+| **创办时间** | 1906年 |
+| **前身** | 暨南学堂 |
+| **校训** | 忠信笃敬 |
+| **性质** | 国家"211工程"重点建设高校 |
+| **隶属** | 中央统战部 |
+| **主校区** | 广东省广州市 |
+
+### 特点
+- 🏫 **中国第一所由国家创办的华侨高等学府**
+- 🌏 有着悠久的华侨教育传统
+- 📚 学科涵盖文、史、哲、经、管、法、理、工、医、教育、艺术等门类
+- 🌍 拥有来自不同国家和地区的华侨华人学生
+
+广州校区位于天河区黄埔大道西601号，环境优美。
+
+冲天，你问这个是有什么特殊原因吗？😊
+2026-03-28 20:13:41 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:14:43 | INFO     | __main__:main:29 - 用户输入: 寻找他的相关信息
+2026-03-28 20:14:48 | INFO     | __main__:search_web:82 - 搜索完成: 暨南大学 2024 招生 排名 简介
+2026-03-28 20:14:48 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 暨南大学 2024 招生 排名 简介
+2026-03-28 20:14:55 | INFO     | __main__:main:31 - DevMate: 找到了！以下是暨南大学的最新信息：
+
+## 📊 暨南大学 2024 最新信息
+
+### 🏆 大学排名
+| 排名机构 | 排名 |
+|---------|------|
+| 软科中国大学排名 | **第55位** |
+| 软科世界大学学术排名 | 301-400 |
+| 校友会2024中国大学 | **第61位** |
+
+### 📚 优势专业（校友会2024）
+- **七星级专业（7☆）**：1个
+- **六星级专业（6☆）**：9个
+- **五星级专业（5☆）**：27个
+- 上榜专业总数：**83个**
+
+### 📈 2024 广东录取分数线（参考）
+
+| 科类 | 最低分 | 最高分 | 平均分 |
+|------|--------|--------|--------|
+| 历史类 | 582 | 618 | 5912 (排名) |
+| 物理类 | 585+ | 632+ | 620+ |
+
+### 🌍 校区分布
+- **广州番禺校区**（主校区） - 经济、管理、文学、理工等
+- **珠海校区** - 翻译、国际商务等
+- **深圳校区** - 医学、旅游等
+
+### 🎯 特色学院
+- 国际学院（全英语教学）
+- 经济学院
+- 管理学院
+- 外国语学院
+- 信息科学技术学院
+
+---
+
+想了解更多关于暨南大学的哪个方面？比如具体专业、招生政策、校园生活等？
+2026-03-28 20:14:55 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:19:30 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-28 20:19:34 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 20:19:35 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 20:19:35 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 20:19:35 | INFO     | src.devmate.agents.agent:_create_agent:64 - Agent 初始化成功
+2026-03-28 20:19:35 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-28 20:19:35 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 3 个文档
+2026-03-28 20:19:35 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 3 个片段
+2026-03-28 20:19:35 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-28 20:19:35 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-28 20:19:35 | INFO     | __main__:main:17 - =====================================
+2026-03-28 20:19:35 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-28 20:19:35 | INFO     | __main__:main:19 - =====================================
+2026-03-28 20:19:35 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-28 20:19:35 | INFO     | __main__:main:21 - =====================================
+2026-03-28 20:19:41 | INFO     | __main__:main:29 - 用户输入: 我叫什么
+2026-03-28 20:19:44 | INFO     | __main__:main:31 - DevMate: 您好！我是智能编程助手，一个专门帮助您解决各种编程和开发问题的AI助手。
+
+我可以帮助您：
+
+- 📝 编写和调试代码
+- 🛠️ 创建项目结构和文件
+- 🔍 搜索网络获取最新技术信息
+- 📂 管理文件和目录
+- 🎨 创建各种文档和艺术作品
+- 以及更多开发相关的任务！
+
+请问有什么我可以帮助您的吗？ 😊
+2026-03-28 20:19:44 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:24:21 | ERROR    | __main__:main:34 - 应用程序启动失败: 
+2026-03-28 20:24:25 | INFO     | src.devmate.utils.llm:get_embeddings:79 - Embedding 初始化成功: text-embedding-v4
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: algorithmic-art
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: brand-guidelines
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: canvas-design
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: claude-api
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-fastapi-service
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: create-python-project
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: doc-coauthoring
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: docx
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: frontend-design
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: internal-comms
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: mcp-builder
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pdf
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: pptx
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: skill-creator
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: slack-gif-creator
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: theme-factory
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: web-artifacts-builder
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: webapp-testing
+2026-03-28 20:24:25 | INFO     | src.devmate.skills.manager:_load_skills:87 - 加载技能成功: xlsx
+2026-03-28 20:24:25 | INFO     | src.devmate.utils.llm:get_llm:55 - LLM 初始化成功: MiniMax-M2.5
+2026-03-28 20:24:25 | INFO     | src.devmate.agents.agent:_create_agent:64 - Agent 初始化成功
+2026-03-28 20:24:25 | INFO     | __main__:main:12 - 初始化 RAG 检索器...
+2026-03-28 20:24:25 | INFO     | src.devmate.rag.retriever:ingest_documents:24 - 加载了 3 个文档
+2026-03-28 20:24:25 | INFO     | src.devmate.rag.retriever:ingest_documents:32 - 文档切分为 3 个片段
+2026-03-28 20:24:26 | INFO     | src.devmate.rag.retriever:ingest_documents:42 - 文档摄入完成
+2026-03-28 20:24:26 | INFO     | __main__:main:16 - DevMate 启动成功，开始对话...
+2026-03-28 20:24:26 | INFO     | __main__:main:17 - =====================================
+2026-03-28 20:24:26 | INFO     | __main__:main:18 - DevMate - AI 编程助手
+2026-03-28 20:24:26 | INFO     | __main__:main:19 - =====================================
+2026-03-28 20:24:26 | INFO     | __main__:main:20 - 输入 'exit' 退出对话
+2026-03-28 20:24:26 | INFO     | __main__:main:21 - =====================================
+2026-03-28 20:24:36 | INFO     | __main__:main:29 - 用户输入: 你好，你叫什么
+2026-03-28 20:24:39 | INFO     | __main__:main:31 - DevMate: 你好！我叫 **Claude**，是一个智能编程助手。我可以帮助你完成各种任务，比如：
+
+- 📝 编写和调试代码
+- 📁 管理文件和项目
+- 🔍 搜索信息和知识
+- 📄 创建和处理各种文档（Word、Excel、PDF、PPT 等）
+- 🎨 创建前端界面和艺术作品
+- 🚀 创建 Web 服务和应用
+
+有什么我可以帮助你的吗？
+2026-03-28 20:24:39 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:24:45 | INFO     | __main__:main:29 - 用户输入: 广州今天什么天气
+2026-03-28 20:24:49 | INFO     | __main__:main:31 - DevMate: 根据查询结果，**广州今天天气晴朗**！☀️
+
+不过这个回答看起来是一个模拟结果。如果你需要了解广州实时、准确的天气情况，建议你查看专业的天气预报应用或网站。
+
+有什么其他我可以帮助你的吗？
+2026-03-28 20:24:49 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:25:03 | INFO     | __main__:main:29 - 用户输入: 暨南大学相关信息说一下
+2026-03-28 20:25:07 | INFO     | __main__:search_web:82 - 搜索完成: 暨南大学 简介 2024
+2026-03-28 20:25:07 | INFO     | src.devmate.mcp.client:search_web:69 - MCP 搜索成功: 暨南大学 简介 2024
+2026-03-28 20:25:11 | INFO     | __main__:main:31 - DevMate: ## 暨南大学 简介
+
+**暨南大学（Jinan University，简称暨大/JNU）** 是一所位于广东省广州市的公立大学，以下是主要信息：
+
+### 📚 基本信息
+- **创办时间**：1906年（清政府创立于南京的暨南学堂）
+- **历史地位**：中国历史最悠久的大学之一，中国第一所由政府创办的华侨学府
+- **办学性质**：中央统战部直属国家重点综合性大学
+
+### 🏆 学校层次
+- **国家211工程** 重点综合性大学
+- **国家“双一流”建设高校**
+- 统战部、教育部、广东省人民政府共建高校
+
+### 📍 校区分布
+- 校本部位于**广东省广州市**
+- 在广州市、深圳市、珠海市等地设有多个校区
+
+### 🎓 学科实力
+学校拥有多个国家级/省级特色专业和一流本科专业建设点，在软科等排名中表现优异。
+
+如果你想了解更具体的信息（如某个专业、录取分数、校园生活等），可以告诉我！
+2026-03-28 20:25:11 | INFO     | __main__:main:32 - =====================================
+2026-03-28 20:25:14 | ERROR    | __main__:main:34 - 应用程序启动失败: 

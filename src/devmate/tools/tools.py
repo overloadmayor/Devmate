@@ -4,6 +4,19 @@ from ..rag.retriever import retriever
 from ..utils.logger import logger
 from langchain_tavily import TavilySearch
 from ..skills.manager import skills_manager
+from langchain_community.tools.file_management import (
+    ReadFileTool,
+    WriteFileTool,
+    ListDirectoryTool,
+    DeleteFileTool
+)
+
+# 初始化文件操作工具
+read_file = ReadFileTool()
+write_file = WriteFileTool()
+list_directory = ListDirectoryTool()
+delete_file = DeleteFileTool()
+@tool
 async def search_web(query: str) -> str:
     """搜索网络获取最新信息
     
@@ -33,6 +46,7 @@ async def search_web(query: str) -> str:
         logger.error(f"搜索工具执行失败: {e}")
         return f"搜索失败: {str(e)}"
 
+@tool
 async def search_knowledge_base(query: str) -> str:
     """搜索本地知识库获取相关信息
     

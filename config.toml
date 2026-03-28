@@ -1,7 +1,7 @@
 [model]
 ai_base_url = "https://api.modelverse.cn/v1/"
 api_key = "${MODEL_API_KEY}"
-model_name = "deepseek-ai/DeepSeek-V3.2"
+model_name = "MiniMax-M2.5"
 
 [embedding]
 ai_base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
