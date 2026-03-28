@@ -19,5 +19,3 @@ COPY config.toml ./
 ENV PYTHONPATH=/app/src
 
 EXPOSE 8000
-
-CMD ["sh", "-c", "uv run python -m devmate.mcp.server"]
