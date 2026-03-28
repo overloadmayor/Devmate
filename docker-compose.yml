@@ -1,16 +1,69 @@
-version: '3.8'
-
 services:
-  devmate:
+  vector-db:
+    image: chromadb/chroma:latest
+    container_name: devmate-vector-db
+    ports:
+      - "8001:8000"
+    volumes:
+      - vector_db:/app/volumes/chroma
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  mcp-server:
     build: .
+    container_name: devmate-mcp-server
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
-      - vector_db:/app/vector_db
-      - .skills:/app/.skills
+      - ./src:/app/src
+      - ./config.toml:/app/config.toml
+      - ./test_dir:/app/test_dir
     environment:
       - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app/src
+      - MODEL_API_KEY=${MODEL_API_KEY:-}
+      - EMBEDDING_API_KEY=${EMBEDDING_API_KEY:-}
+      - TAVILY_API_KEY=${TAVILY_API_KEY:-}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY:-}
+      - CHROMA_HOST=vector-db
+      - CHROMA_PORT=8000
+    depends_on:
+      vector-db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+  devmate-app:
+    build: .
+    container_name: devmate-app
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./src:/app/src
+      - ./config.toml:/app/config.toml
+      - ./test_dir:/app/test_dir
+      - ./main.py:/app/main.py
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app/src
+      - MODEL_API_KEY=${MODEL_API_KEY:-}
+      - EMBEDDING_API_KEY=${EMBEDDING_API_KEY:-}
+      - TAVILY_API_KEY=${TAVILY_API_KEY:-}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY:-}
+      - CHROMA_HOST=vector-db
+      - CHROMA_PORT=8000
+    depends_on:
+      - mcp-server
+    restart: "no"
 
 volumes:
   vector_db:
