@@ -50,3 +50,4 @@ htmlcov/
 Thumbs.db
 vector_db/chroma.sqlite3
 
+uv copy.lock

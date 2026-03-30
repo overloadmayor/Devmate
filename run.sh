@@ -1,1 +1,0 @@
-$env:PYTHONPATH='d:\DevMate\src'; uv run python -m devmate.mcp.server
